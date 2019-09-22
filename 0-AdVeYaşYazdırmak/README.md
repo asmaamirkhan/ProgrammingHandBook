@@ -25,7 +25,7 @@ Girilen isim ve doğum yılı bilgilerini alarak, isim ve yaş olarak ekrana gö
 
 ```java
 import java.util.*;
-public class yedinci_Program {
+public class AdVeYasYazdirmak {
  public static void main(String arg[]) {
   Scanner input = new Scanner(System.in);
   String isim; // 1. Adım, I. nota bak
