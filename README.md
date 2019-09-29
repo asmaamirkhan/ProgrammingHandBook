@@ -6,7 +6,7 @@ Bu kitapçık, Programlama-I dersi konuları üzerinde örnekler anlatmak ve ç�
 
 ## 📑 İçerikler
 Her soru klasöründe aşağıdaki dosyalar bulunmaktadır:
-1. Anlatım dosyası (README.md dosyası)
+1. Anlatım dosyası (`README.md` dosyası)
 2. Java kod dosyası (`.java` uzantılı)
 3. C# kod dosyası (`.cs` uzantılı)
 4. Çözüm şema dosyası (`.png` uzantılı)
@@ -21,5 +21,5 @@ Her soru klasöründe aşağıdaki dosyalar bulunmaktadır:
 Hemen koda bakmaktansa yukarıda anlatılan şekilde yapsan kitapçık daha faydalı olacaktır.
 
 ## 🙌 Hazırlayanlar
-- Asmaa Mirkhan [Linkedin 🔗](https://www.linkedin.com/in/asmaa-mirkhan/)
-- Mohammad AlBadwieh [Linkedin 🔗](https://www.linkedin.com/in/mhdb96/)
+- Asmaa Mirkhan [Linkedin 🔗](https://www.linkedin.com/in/asmaa-mirkhan/) - [GitHub 🔗](https://github.com/asmaamirkhan)
+- Mohammad AlBadwieh [Linkedin 🔗](https://www.linkedin.com/in/mhdb96/) - [GitHub 🔗](https://github.com/mhdb96)
