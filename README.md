@@ -10,9 +10,9 @@ Her soru klasöründe aşağıdaki dosyalar bulunmaktadır:
 2. Java kod dosyası (`.java` uzantılı)
 3. C# kod dosyası (`.cs` uzantılı)
 4. Çözüm şema dosyası (`.png` uzantılı)
-5. C++ kod dosyası (Hazırlama aşamasında 👩‍💻)
+5. C++ kod dosyası (Hazırlama aşamasında 👩‍💻, destek vermek istiyorsan iletişime geçersen hoş olur 🤗)
 
-> Fasikülün PDF'ine [buradan](./res/Programlama-IKitapçığıV.1.pdf) erişebilirsin 🚩
+> Fasikülün PDF'ine [buradan](./res/Programlama-IKitapçığıV.1.pdf) erişebilirsin ✨🚩
 
 ## 📍 Fasikülü Nasıl Kullanmam Lazım?
 <img src="./res/KullanmaAlgoritmasi.PNG" width="400"  />
