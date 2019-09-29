@@ -1,5 +1,5 @@
 import java.util.*;
-public class IkiSayınınBolunmesi {
+public class IkiSayininBolunmesi {
  public static void main(String arg[]) {
   Scanner input = new Scanner(System.in);
 
