@@ -1,15 +1,25 @@
 # 💻 Programlama-I Fasikülü V.1 2017/2018 Güz Dönemi 
-Programlama temellerine dayanarak yazılmıştır.
+Programlama temellerine dayanarak hazırlanmıştır.
 
 ## 🎤 Ön Söz
 Bu kitapçık, Programlama-I dersi konuları üzerinde örnekler anlatmak ve çözmek amacıyla hazırlanmıştır. Kitapçıktaki sorular **kolaydan zora** doğru sıralanmıştır, her programın akış diyagramı ve program dosyasını içeren klasörle bağlantılı _QR_ kodu bulunmaktadır.
 
-## 📍 Fasikül Kullanım Algoritması
+## 📑 İçerikler
+Her soru klasöründe aşağıdaki dosyalar bulunmaktadır:
+1. Anlatım dosyası (README.md dosyası)
+2. Java kod dosyası (`.java` uzantılı)
+3. C# kod dosyası (`.cs` uzantılı)
+4. Çözüm şema dosyası (`.png` uzantılı)
+5. C++ kod dosyası (Hazırlama aşamasında 👩‍💻)
+
+> Fasikülün PDF'ine [buradan](./res/Programlama-IKitapçığıV.1.pdf) erişebilirsin 🚩
+
+## 📍 Fasikülü Nasıl Kullanmam Lazım?
 <img src="./res/KullanmaAlgoritmasi.PNG" width="400"  />
 
-### Tavsiye
-Hemen koda bakmaktansa yukarıda anlatılan şekilde yapsanız kitapçık daha faydalı olacaktır.
+### 🔖 Tavsiye
+Hemen koda bakmaktansa yukarıda anlatılan şekilde yapsan kitapçık daha faydalı olacaktır.
 
-## Hazırlayanlar
-- [Asmaa Mirkhan](https://www.linkedin.com/in/asmaa-mirkhan/)
-- [Mohammad AlBadwieh](https://www.linkedin.com/in/mhdb96/)
+## 🙌 Hazırlayanlar
+- Asmaa Mirkhan [Linkedin 🔗](https://www.linkedin.com/in/asmaa-mirkhan/)
+- Mohammad AlBadwieh [Linkedin 🔗](https://www.linkedin.com/in/mhdb96/)
