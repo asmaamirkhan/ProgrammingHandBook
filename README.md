@@ -1,4 +1,4 @@
-# 💻 Programlama-I Fasikülü V.1 2017/2018 Güz Dönemi 
+# 💻 Programlama-I Fasikülü ~ 2017/2018 Güz Dönemi 
 Programlama temellerine dayanarak hazırlanmıştır.
 
 ## 🎤 Ön Söz
