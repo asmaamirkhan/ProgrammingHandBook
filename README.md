@@ -2,7 +2,7 @@
 Programlama temellerine dayanarak yazılmıştır.
 
 ## 🎤 Ön Söz
-Bu kitapçık, Programlama-I dersi konuları üzerinde örnekler anlatmak ve çözmek amacıyla hazırlanmıştır. Kitapçıktaki sorular kolaydan zora doğru sıralanmıştır, her programın akış diyagramı ve program dosyasını içeren klasörle bağlantılı _QR_ kodu bulunmaktadır.
+Bu kitapçık, Programlama-I dersi konuları üzerinde örnekler anlatmak ve çözmek amacıyla hazırlanmıştır. Kitapçıktaki sorular **kolaydan zora** doğru sıralanmıştır, her programın akış diyagramı ve program dosyasını içeren klasörle bağlantılı _QR_ kodu bulunmaktadır.
 
 ## 📍 Fasikül Kullanım Algoritması
 <img src="./res/KullanmaAlgoritmasi.PNG" width="400"  />
