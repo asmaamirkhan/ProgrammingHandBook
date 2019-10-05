@@ -15,9 +15,39 @@
    * Sayacın değerinin yazdırılması.
 
 ## 🤖 Kod
-<details>
-<summary>Tıkla</summary>
 
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- C++ Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+<details>
+<summary><b>C++ Kodu</b></summary>
+
+```c++
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main()
+{
+    // “i”nin tanımlanması.
+    int i; 
+    // Sayacın değerini azaltan bir döngünün oluşturulması.
+    for (i = 500; i >= 100; i--) 
+    // Sayacın değerinin yazdırılması.
+        cout << i << " - "; 
+    return 0;
+}
+
+```
+</details>
+
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- Java Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+<details>
+<summary><b>Java Kodu</b></summary>
 
 ```java
 public class SayilariYazdirmak {
@@ -27,6 +57,37 @@ public class SayilariYazdirmak {
    System.out.print(i + " - "); // 2. adım (*), I. Nota bak
  }
 }
+```
+</details>
+
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- C# Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+<details>
+<summary><b>C# Kodu</b></summary>
+
+```cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SayilariYazdirmak
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i;
+            for (i = 500; i >= 100; i--)
+                Console.Write(i + " - ");
+            Console.ReadLine();
+        }
+    }
+}
+
 ```
 </details>
 
