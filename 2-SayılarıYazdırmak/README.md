@@ -10,7 +10,7 @@
 - Yazdırılacak sayıları bulmak için değeri 500’dan başlayan 100’a kadar azalan bir sayaç oluşturuyoruz, sayacın her azaldığında onun değerini ekrana yazdırıyoruz.
   
 ## 👩‍🔧 Çözüm Adımları
-1. “i”nin tanımlanması.
+1. `i`nin tanımlanması.
 2. Sayacın değerini azaltan bir döngünün oluşturulması.
    * Sayacın değerinin yazdırılması.
 

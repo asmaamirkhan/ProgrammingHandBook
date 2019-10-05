@@ -4,30 +4,30 @@
 Verilen iki sayının birbirine tam olarak bölünüp bölünemeyeceğini bulan algoritmayı yazınız. (Büyük sayı küçük sayıya bölünecek, sayıların girişteki sıraları farklı olabilir.)
 
 ## ⛓ Program Kısımları
-1. “a” ve “b” değerlerini girmek.
-2. “a” ile “b”yi karşılaştırmak (Gerekirse değiştirmek).
+1. `a` ve `b` değerlerini girmek.
+2. `a` ile `b`yi karşılaştırmak (Gerekirse değiştirmek).
 3. Birbirine bölünüp bölünmediğini öğrenmek.
 4. 3.adıma göre sonuç yazdırmak.
 
 ## 👓 Çözüm Yöntemi 
-- a mod b = 0 ise, “a” ve “b” tam bölündüğü bellidir.
+- a mod b = 0 ise, `a` ve `b` tam bölündüğü bellidir.
   
 ## 👩‍🔧 Çözüm Adımları
-1. “a”, “b”, “c” tanımlanması.
-2. “a” ve “b”nin değerlerinin girilmesi.
+1. `a`, `b`, `c` tanımlanması.
+2. `a` ve `b`nin değerlerinin girilmesi.
 3. Büyük sayının tespit edilmesi.
 
-   i. “a”nın değerinin “c”de saklanması.
+   i. `a`nın değerinin `c`de saklanması.
 
-   ii. “b”nin değeri “a”ya atanması.
+   ii. `b`nin değeri `a`ya atanması.
 
-   iii. “c”de Saklanan değerinin “b”ye aktarılması.
+   iii. `c`de Saklanan değerinin `b`ye aktarılması.
 
 4. Modun kontrol edilmesi:
    
-   i. 0 ise “Tam Bolunebilir” yazdırılması.
+   i. 0 ise `Tam Bolunebilir` yazdırılması.
    
-   ii. 0 değilse “Tam Bolunemez” yazdırılması.
+   ii. 0 değilse `Tam Bolunemez` yazdırılması.
 
 ## 🤖 Kod
 
@@ -154,4 +154,4 @@ a=2    b=6    Tam Bolunebilir
 ```
 
 ## 💡 Notlar 
-1. a’nın değerinin kaybolmaması için geçici değişkende “c” değiştirme işleminin sırasında saklandı.
+1. `a`nın değerinin kaybolmaması için geçici değişkende `c` değiştirme işleminin sırasında saklandı.

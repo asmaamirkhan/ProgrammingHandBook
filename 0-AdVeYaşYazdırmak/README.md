@@ -12,11 +12,11 @@ Girilen isim ve doğum yılı bilgilerini alarak, isim ve yaş olarak ekrana gö
 * Yaşı hesaplamak için (2017 – doğum yılı) formülünü kullanırız.
 
 ## 👩‍🔧 Çözüm Adımları
-1. “isim”in string olarak tanımlanması.
-2. “yil”, “yas”, “buyil”ın tanımlanması.
-3. “isim” ve “yil”ın girilmesi.
-4. “yas”ın değerinin hesaplanması.
-5. “isim” ve “yas”ın ekrana yazdırılması.
+1. `isim`in string olarak tanımlanması.
+2. `yil`, `yas`, `buyil`ın tanımlanması.
+3. `isim` ve `yil`ın girilmesi.
+4. `yas`ın değerinin hesaplanması.
+5. `isim` ve `yas`ın ekrana yazdırılması.
 
 ## 🤖 Kod
 
@@ -131,4 +131,4 @@ Yasiniz: 21
 ```
 
 ## 💡 Notlar 
-1. İsim metin olduğu için, “isim” string olarak tanımlandı.
+1. İsim metin olduğu için, `isim` string olarak tanımlandı.
