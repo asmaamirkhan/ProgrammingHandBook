@@ -19,9 +19,48 @@ Girilen isim ve doğum yılı bilgilerini alarak, isim ve yaş olarak ekrana gö
 5. “isim” ve “yas”ın ekrana yazdırılması.
 
 ## 🤖 Kod
-<details>
-<summary>Tıkla</summary>
 
+
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- C++ Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+<details>
+<summary><b>C++ Kodu</b></summary>
+
+```cpp
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main()
+{
+    // “isim”in string olarak tanımlanması
+    string isim;
+    // “yil”, “yas”, “buyil”ın tanımlanması
+    int yil, yas, buyil = 2017; 
+    // “isim” ve “yil”ın girilmesi
+    cout << "Isminizi giriniz: ";
+    cin >> isim;
+    cout << "Dogum yilinizi giriniz: ";
+    cin >> yil;
+    // “yas”ın değerinin hesaplanması
+    yas = buyil - yil;
+    // “isim” ve “yas”ın ekrana yazdırılması
+    cout << "Isminiz: " << isim <<  "Yasiniz: " << yas ; 
+    return 0;
+}
+
+```
+</details>
+
+
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- Java Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+<details>
+<summary><b>Java Kodu</b></summary>
 
 ```java
 import java.util.*;
@@ -43,6 +82,44 @@ public class AdVeYasYazdirmak {
 ```
 </details>
 
+
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- C# Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+<details>
+<summary><b>C# Kodu</b></summary>
+
+```cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace yedinci_Program
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            String isim;
+            int yil, yas, buyil = 2017;
+            Console.WriteLine("Isminizi giriniz: ");
+            isim = Console.ReadLine();
+            Console.WriteLine("Dogum yilinizi giriniz: ");
+            yil = Convert.ToInt32(Console.ReadLine());
+            yas = buyil - yil;
+            Console.WriteLine("Isminiz: " + isim);
+            Console.WriteLine("Yasiniz: " + yas);
+            Console.ReadLine();
+        }
+    }
+}
+
+
+```
+</details>
 
 ## 🎉 Ekran Çıktısı
 
