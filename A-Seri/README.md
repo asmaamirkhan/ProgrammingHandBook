@@ -22,9 +22,51 @@ a- `i`ye göre terim değerinin hesaplanıp önceki toplama eklenmesi.
 4. Formül sonucunun ekrana yazdırılması.
 
 ## 🤖 Kod
-<details>
-<summary>Tıkla</summary>
 
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- C++ Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+<details>
+<summary><b>C++ Kodu</b> </summary>
+
+```cpp
+#include <iostream>
+#include <string>
+
+using namespace std;
+float faktoriyel(int a) { 
+    int f = 1, i;
+    for (i = 2; i <= a; i++)
+        f = f * i;
+    return f;
+}
+
+int main()
+{
+    // “n” ve “i”nin tanımlanması.
+    int n = 10, i;
+    // “toplam”ın float (reel) tanımlanması
+    float toplam = 0;
+    // 1’den 10’a kadar döngünün oluşturulması
+    for (i = 1; i <= 10; i++) 
+    {
+        // “i”ye göre terim değerinin hesaplanıp önceki toplama eklenmesi
+        toplam = toplam + (i + (n - i) / faktoriyel(i)); 
+    }
+    // Formül sonucunun ekrana yazdırılması
+    cout << toplam; 
+ }
+
+```
+</details>
+
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- Java Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+<details>
+<summary><b>Java Kodu</b></summary>
 
 ```java
 public class Seri {
@@ -47,6 +89,48 @@ public class Seri {
 ```
 </details>
 
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- C# Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+<details>
+<summary><b>C# Kodu</b></summary>
+
+```cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Seri
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = 10, i;
+            float toplam = 0;
+            for (i = 1; i <= 10; i++)
+            {
+                toplam = toplam + (i + (n - i) / faktoryel(i));
+            }
+            Console.WriteLine(toplam);
+            Console.ReadLine();
+        }
+        public static float faktoryel(int a)
+        {
+            int f = 1, i;
+            for (i = 2; i <= a; i++)
+                f = f * i;
+            return f;
+        }
+ 
+    }
+}
+
+```
+</details>
 
 ## 🎉 Ekran Çıktısı
 
