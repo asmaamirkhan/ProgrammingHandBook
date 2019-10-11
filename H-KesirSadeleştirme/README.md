@@ -25,39 +25,80 @@ Girilen bir kesri sadeleştiren programı yazınız.
 5. Kesrin son halinin yazdırılması.
 
 ## 🤖 Kod
-<details>
-<summary>Tıkla</summary>
 
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- C++ Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+### ⚙ C++ Kodu
+
+```cpp
+#include <iostream>
+
+using namespace std;
+int main()
+{
+  int pay, payda, i = 2, kucuk; // Değişkenlerin tanımlanması
+  // Pay ve paydanın girilmesi
+  cout << "Payi gir:";
+  cin >> pay; 
+  cout << "Paydayi gir:";
+  cin >> payda;
+
+  // Pay ve paydanın küçüğünün tespit edilmesi
+  if (pay > payda) 
+   kucuk = abs(payda);
+  else kucuk = abs(pay);
+  while (i <= kucuk) {
+   if (pay % i == 0 && payda % i == 0) {
+    // pay, payda ve “kucuk” “i”ye bölünmesi
+    pay /= i; 
+    payda /= i;
+    kucuk /= i;
+    i = 2; 
+   } else i++; 
+  }
+  cout << pay << " / " << payda; // Kesrin son halinin yazdırılması
+ }
+```
+
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- Java Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+### ☕ Java Kodu
 
 ```java
 import java.util.Scanner;
 public class KesirSadelestirme {
  public static void main(String[] args) {
   Scanner input = new Scanner(System.in);
-  int pay, payda, i = 2, kucuk; //1. adim
+  int pay, payda, i = 2, kucuk; // Değişkenlerin tanımlanması
+  // Pay ve paydanın girilmesi
   System.out.print("Payi gir:");
-  pay = input.nextInt(); //2. adim
+  pay = input.nextInt(); 
   System.out.print("Paydayi gir:");
-  payda = input.nextInt(); //2. adim
-  if (pay > payda) //3. adim
+  payda = input.nextInt(); 
+  // Pay ve paydanın küçüğünün tespit edilmesi
+  if (pay > payda) 
    kucuk = Math.abs(payda);
   else kucuk = Math.abs(pay);
   while (i <= kucuk) //4. adim
   {
    if (pay % i == 0 && payda % i == 0) //4. adim (a)
    {
-    pay /= i; //4. adim (a)(*)
-    payda /= i;
-    kucuk /= i;
-    i = 2; //4. adim (a)(**)
-   } else i++; //4. adim (b)
+     // pay, payda ve “kucuk” “i”ye bölünmesi
+      pay /= i; 
+      payda /= i;
+      kucuk /= i;
+      i = 2; 
+   } else i++;
   }
-  System.out.printf("%d / %d", pay, payda); //5. adim
+  System.out.printf("%d / %d", pay, payda); // Kesrin son halinin yazdırılması
   input.close();
  }
 }
 ```
-</details>
 
 
 ## 🎉 Ekran Çıktısı
