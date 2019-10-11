@@ -24,10 +24,50 @@ Arka arkaya girilen 10 sayıdan istenilen bir sayıya en yakın olan sayıyı bu
 6. Sonuçların yazdırılması.
 
 ## 🤖 Kod
-<details>
-<summary>Tıkla</summary>
 
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- C++ Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
 
+### ⚙ C++ Kodu
+
+```cpp
+#include <iostream>
+
+using namespace std;
+int main()
+{
+  int x, sayi, yakinlik, enyakin, i; // Değişkenlerin tanımlanması
+  int enyakin2 = 0, yakinlik2 = -1;
+  cin >> sayi; // “sayi”nın girilmesi
+  cin >> x; // İlk “x” değerinin girilmesi
+  enyakin = x; // İlk değere göre değişkenlere değer atanması
+  yakinlik = abs(x - sayi);
+  for (i = 0; i < 9; i++) {
+   cin >> x; // “x”in girilmesi   
+
+   // Koşullar kontrol edilirken “yakinlik” ve “enyakin” değerlerin değiştirilmesi
+   if (abs(x - sayi) < yakinlik) { 
+    yakinlik =abs(x - sayi);
+    enyakin = x;
+   } else if (abs(x - sayi) == yakinlik) {
+    if (x != enyakin) {
+     yakinlik2 = yakinlik;
+     enyakin2 = x;
+    }
+   }
+  }
+  if (yakinlik2 == yakinlik)
+   cout << "Diger en yakin sayi= " << enyakin2; 
+  cout << "En yakin sayi= " << enyakin;
+ }
+```
+
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- Java Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+### ☕ Java Kodu
 ```java
 import java.util.*;
 public class YakiniBulmak {
@@ -58,8 +98,48 @@ public class YakiniBulmak {
  }
 }
 ```
-</details>
 
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- C# Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+### ⏹ C# Kodu
+```cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace YakiniBulmak
+{
+    class Program{
+        static void Main(string[] args){
+            int x, sayi, yakinlik, enyakin, i, enyakin2 = -1, yakinlik2 = -1;
+            sayi = Convert.ToInt32(Console.ReadLine()); 
+            x = Convert.ToInt32(Console.ReadLine());
+            enyakin = x;
+            yakinlik = Math.Abs(x - sayi);
+            for (i = 0; i < 9; i++){
+                x = Convert.ToInt32(Console.ReadLine());
+                if (Math.Abs(x - sayi) < yakinlik){
+                    yakinlik = Math.Abs(x - sayi);
+                    enyakin = x;
+                }
+                else if (Math.Abs(x - sayi) == yakinlik){
+                    if (x != enyakin){
+                        yakinlik2 = yakinlik;
+                        enyakin2 = x;
+                    }
+                }
+            }
+            if (yakinlik2 == yakinlik)
+                Console.WriteLine(enyakin2);
+            Console.WriteLine(enyakin);
+            Console.ReadLine();
+        }
+    }
+}
+```
 
 ## 🎉 Ekran Çıktısı
 
