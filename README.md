@@ -6,6 +6,7 @@ Bu kitapçık, Programlama-I dersi konuları üzerinde örnekler anlatmak ve ç�
 
 ## 📑 İçerikler
 Her soru klasöründe aşağıdaki dosyalar bulunmaktadır:
+
 1. Anlatım dosyası (`README.md` dosyası)
 2. Java kod dosyası (`.java` uzantılı)
 3. C# kod dosyası (`.cs` uzantılı)
