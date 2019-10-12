@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 
 using namespace std;
 int main()
@@ -8,7 +7,7 @@ int main()
     string isim;
   
     // “yil”, “yas”, “buyil”ın tanımlanması
-    int yil, yas, buyil = 2017; 
+    int yil, yas, buyil = 2019; 
 
     // “isim” ve “yil”ın girilmesi
     cout << "Isminizi giriniz: ";
