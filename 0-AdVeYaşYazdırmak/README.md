@@ -93,7 +93,8 @@ public class AdVeYasYazdirmak {
   System.out.print("Dogum yilinizi giriniz: ");
   yil = input.nextInt();
   yas = buyil - yil; // “yas”ın değerinin hesaplanması
-  System.out.println("Isminiz: " + isim); // “isim” ve “yas”ın ekrana yazdırılması
+  // “isim” ve “yas”ın ekrana yazdırılması
+  System.out.println("Isminiz: " + isim); 
   System.out.println("Yasiniz: " + yas);
   input.close();
  }
@@ -116,13 +117,15 @@ namespace AdVeYasYazdirmak
 {
     class Program{
         static void Main(string[] args){
-            String isim;
-            int yil, yas, buyil = 2017;
+            String isim; // “isim”in string olarak tanımlanması
+            int yil, yas, buyil = 2019; // “yil”, “yas”, “buyil”ın tanımlanması
+            // “isim” ve “yil”ın girilmesi
             Console.WriteLine("Isminizi giriniz: ");
             isim = Console.ReadLine();
             Console.WriteLine("Dogum yilinizi giriniz: ");
             yil = Convert.ToInt32(Console.ReadLine());
-            yas = buyil - yil;
+            yas = buyil - yil; // “yas”ın değerinin hesaplanması
+            // “isim” ve “yas”ın ekrana yazdırılması
             Console.WriteLine("Isminiz: " + isim);
             Console.WriteLine("Yasiniz: " + yas);
             Console.ReadLine();
@@ -145,7 +148,7 @@ namespace AdVeYasYazdirmak
 Isminizi giriniz: Muhammed
 Dogum yilinizi giriniz: 1996
 Isminiz: Muhammed
-Yasiniz: 21
+Yasiniz: 23
 ```
 
 <!-- ----------------------------- Notlar ----------------------------------- -->

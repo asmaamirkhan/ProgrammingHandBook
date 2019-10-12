@@ -49,8 +49,6 @@ Verilen iki sayının birbirine tam olarak bölünüp bölünemeyeceğini bulan 
 
 ```cpp
 #include <iostream>
-#include <string>
-
 using namespace std;
 int main()
 {
@@ -130,7 +128,6 @@ public class onikinci_Program {
  }
 }
 ```
-</details>
 
 [//]: ------------------------------------------------------------------------------
 <!-- ----------------------------- C# Kodu ----------------------------------- -->
@@ -147,16 +144,19 @@ using System.Threading.Tasks;
 namespace IkiSayininBolunmesi{
     class Program{
         static void Main(string[] args){
-            int a, b, c;
+            int a, b, c; // “a”, “b”, “c” tanımlanması
+            // “a” ve “b”nin değerlerinin girilmesi
             Console.Write("a=");
             a = Convert.ToInt32(Console.ReadLine());
             Console.Write("b=");
             b = Convert.ToInt32(Console.ReadLine());
+            // Büyük sayının a'ya alınması
             if (a < b){
-                c = a;
-                a = b;
-                b = c;
+                c = a; // “a”nın değerinin “c”de saklanması
+                a = b; // “b”nin değeri “a”ya atanması
+                b = c; // “c”de Saklanan değerinin “b”ye aktarılması
             }
+            // Sonucun yazdırılması
             if (a % b == 0)
                 Console.WriteLine("bolunebilir");
 		        else Console.WriteLine("bolunmez");
