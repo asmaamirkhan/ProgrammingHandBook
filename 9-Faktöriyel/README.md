@@ -1,24 +1,35 @@
-# Bir Sayının Faktöriyelini Hesaplamak
+# ❗ Bir Sayının Faktöriyelini Hesaplamak
+
+<!-- ----------------------------- Soru  ----------------------------------- -->
 
 ## ❓ Soru
 Verilen bir sayının faktöriyelini hesaplayan algoritmayı yazınız.
+
+<!-- ----------------------------- Program Kısımları  ----------------------------------- -->
 
 ## ⛓ Program Kısımları
 1. `n` sayısının değerini girmek.
 2. Bir döngü kullanarak `n!` değerini hesaplamak.
 3. `n!` değerini yazdırmak
 
+<!-- ----------------------------- Çözüm Yöntemi  ----------------------------------- -->
+
 ## 👓 Çözüm Yöntemi 
 - `n! = 1*2*3 …. (n-2)*(n-1)*n` veya `n! = n*(n-1)*(n-2) … 2*1` olduğu bellidir.
 - `f` diye bir değişken tanımlayabiliriz, başlangıç değeri 1 olsun, ve onu 2,3 …. `n`ye kadar sayılarıyla çarpabiliriz, bunu yapmak için `i` sayacı tanımlanır 2’den `n`ye kadar değer alır (`i`nin her arttığında `x`le çarpılacak şekilde).
   
+<!-- ----------------------------- Çözüm Adımları  ----------------------------------- -->
+
 ## 👩‍🔧 Çözüm Adımları
 1. `i`, `f`, `n` tanımlanması.
 2. `n`nin değerinin girilmesi.
 3. `n!`i hesaplayan döngünün oluşturulması.
 4. `f`nin değerinin yazdırılması.
 
+<!-- ----------------------------- Kodlar  ----------------------------------- -->
+
 ## 🤖 Kod
+
 [//]: ------------------------------------------------------------------------------
 <!-- ----------------------------- C++ Kodu ----------------------------------- -->
 [//]: ------------------------------------------------------------------------------
@@ -27,7 +38,6 @@ Verilen bir sayının faktöriyelini hesaplayan algoritmayı yazınız.
 
 ```cpp
 #include <iostream>
-
 using namespace std;
 int main()
 {
@@ -40,6 +50,25 @@ int main()
         f = f * i; // “f” değerini i sayacının değerleriyle çarpacak işlem
     cout << "n!=" << f; // “f”nin değerinin yazdırılması
  }
+```
+
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- Pythob Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+### 🐍 Python Kodu
+
+```py 
+f = 1 # “f”nin tanımlanması
+n = int(input("n= ")) # “n”nin değerinin girilmesi
+
+# n!’i hesaplayan döngünün oluşturulması.
+# “i=1” olduğunda sonucu etkilemeyeceği için “i=2”den başlıyoruz.
+# range() foksiyonun özelliğinden dolayı range fonsiyonu bitiş değeri
+# n+1 olarak vereceğiz.
+for i in range(2,n+1):
+    f = f * i # “f” değerini i sayacının değerleriyle çarpacak işlem
+print("n!=", f) # “f”nin değerinin yazdırılması
 ```
 
 [//]: ------------------------------------------------------------------------------
@@ -93,6 +122,13 @@ namespace Faktoryel{
 }
 ```
 
+<!-- ----------------------------- Akış Şeması ----------------------------------- -->
+
+## 🧩 Akış Şeması
+
+<img src="./FaktoryelSema.png" width="200"  />
+
+<!-- ----------------------------- Ekran Çıktısı ----------------------------------- -->
 
 ## 🎉 Ekran Çıktısı
 
@@ -100,6 +136,8 @@ namespace Faktoryel{
 n=5
 n!=120
 ```
+
+<!-- ----------------------------- Notlar ----------------------------------- -->
 
 ## 💡 Notlar 
 1. `i=1` olduğunda sonucu etkilemeyeceği için `i=2`den başlıyoruz.

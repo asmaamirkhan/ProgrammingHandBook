@@ -1,19 +1,26 @@
-# Bir Seri Değerini Hesaplamak
+# 🖇 Bir Seri Değerini Hesaplamak
+
+<!-- ----------------------------- Soru ----------------------------------- -->
 
 ## ❓ Soru
 Aşağıda verilen işlemin sonucunu N=10 değeri için hesaplayan algoritmayı yazınız.
 
 <img src="../res/SeriFormulu.png" height="75"  />
 
+<!-- ----------------------------- Program Kısımları ----------------------------------- -->
+
 ## ⛓ Program Kısımları
 1. N değerini formüle yerleştirerek sonucu elde etmek.
 2. Hesaplanan toplamın sonucunu ekrana yazdırmak.
 
+<!-- ----------------------------- Çözüm Yöntemi ----------------------------------- -->
    
 ## 👓 Çözüm Yöntemi 
 - Formülde görüldüğu gibi, `n` değeri sabit, `i` artıyor.
 - `i`nin değişmesini sağlamak için 10 kere dönen bir döngü kullanırız. Döngü her döndüğünde `i`yi artırıp formüle yerleştiririz.
-  
+
+<!-- ----------------------------- Çözüm Adımları ----------------------------------- -->
+
 ## 👩‍🔧 Çözüm Adımları
 1. `n` ve `i`nin tanımlanması.
 2. “toplam”ın float (reel) tanımlanması.
@@ -21,19 +28,18 @@ Aşağıda verilen işlemin sonucunu N=10 değeri için hesaplayan algoritmayı 
 a- `i`ye göre terim değerinin hesaplanıp önceki toplama eklenmesi.
 4. Formül sonucunun ekrana yazdırılması.
 
+<!-- ----------------------------- Kodlar ----------------------------------- -->
+
 ## 🤖 Kod
 
 [//]: ------------------------------------------------------------------------------
 <!-- ----------------------------- C++ Kodu ----------------------------------- -->
 [//]: ------------------------------------------------------------------------------
 
-<details>
-<summary><b>C++ Kodu</b> </summary>
+### ⚙ C++ Kodu
 
 ```cpp
 #include <iostream>
-#include <string>
-
 using namespace std;
 float faktoriyel(int a) { 
     int f = 1, i;
@@ -44,42 +50,60 @@ float faktoriyel(int a) {
 
 int main()
 {
-    // “n” ve “i”nin tanımlanması.
-    int n = 10, i;
-    // “toplam”ın float (reel) tanımlanması
-    float toplam = 0;
-    // 1’den 10’a kadar döngünün oluşturulması
-    for (i = 1; i <= 10; i++) 
-    {
+    int n = 10, i; // “n” ve “i”nin tanımlanması
+    float toplam = 0; // “toplam”ın float (reel) tanımlanması
+    for (i = 1; i <= 10; i++) { // 1’den 10’a kadar döngünün oluşturulması
         // “i”ye göre terim değerinin hesaplanıp önceki toplama eklenmesi
         toplam = toplam + (i + (n - i) / faktoriyel(i)); 
     }
-    // Formül sonucunun ekrana yazdırılması
-    cout << toplam; 
+    cout << toplam; // Formül sonucunun ekrana yazdırılması 
  }
-
 ```
-</details>
+
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- Python Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+### 🐍 Python Kodu
+
+```py
+# faktoryel fonksiyonun yazılması
+def faktoriyel(a):
+    f = 1
+    i = 0
+    for i in range(2,a+1):
+        f = f * i
+    return f
+
+# “toplam”,“n” ve “i”nin tanımlanması.
+n = 10
+toplam = 0
+# 1’den 10’a kadar döngünün oluşturulması
+for i in range(1,11):
+    # “i”ye göre terim değerinin hesaplanıp önceki toplama eklenmesi
+    toplam = toplam + (i + (n - i) / faktoriyel(i))
+print(toplam) # Formül sonucunun ekrana yazdırılması
+```
 
 [//]: ------------------------------------------------------------------------------
 <!-- ----------------------------- Java Kodu ----------------------------------- -->
 [//]: ------------------------------------------------------------------------------
 
-<details>
-<summary><b>Java Kodu</b></summary>
+### ☕ Java Kodu
 
 ```java
 public class Seri {
  public static void main(String arg[]) {
-  int n = 10, i; // 1. adım
-  float toplam = 0; // 2. adım
-  for (i = 1; i <= 10; i++) // 3. adım
+  int n = 10, i; // “n” ve “i”nin tanımlanması
+  float toplam = 0; // “toplam”ın float (reel) tanımlanması
+  for (i = 1; i <= 10; i++) // 1’den 10’a kadar döngünün oluşturulması
   {
-   toplam = toplam + (i + (n - i) / faktoriyel(i)); // 3. adım (a)
+    // “i”ye göre terim değerinin hesaplanıp önceki toplama eklenmesi
+    toplam = toplam + (i + (n - i) / faktoriyel(i)); 
   }
-  System.out.println(toplam); // 4. adım
+  System.out.println(toplam); // Formül sonucunun ekrana yazdırılması 
  }
- public static float faktoriyel(int a) { // 1. nota bak
+ public static float faktoriyel(int a) { 
   int f = 1, i;
   for (i = 2; i <= a; i++)
    f = f * i;
@@ -87,14 +111,12 @@ public class Seri {
  }
 }
 ```
-</details>
 
 [//]: ------------------------------------------------------------------------------
 <!-- ----------------------------- C# Kodu ----------------------------------- -->
 [//]: ------------------------------------------------------------------------------
 
-<details>
-<summary><b>C# Kodu</b></summary>
+### ⏹ C# Kodu
 
 ```cs
 using System;
@@ -102,24 +124,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace Seri
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            int n = 10, i;
-            float toplam = 0;
-            for (i = 1; i <= 10; i++)
-            {
+namespace Seri{
+    class Program{
+        static void Main(string[] args){
+            int n = 10, i; // “n” ve “i”nin tanımlanması
+            float toplam = 0; // “toplam”ın float (reel) tanımlanması
+            for (i = 1; i <= 10; i++){ // 1’den 10’a kadar döngünün oluşturulması
+                // “i”ye göre terim değerinin hesaplanıp önceki toplama eklenmesi
                 toplam = toplam + (i + (n - i) / faktoryel(i));
             }
-            Console.WriteLine(toplam);
+            Console.WriteLine(toplam);  // Formül sonucunun ekrana yazdırılması 
             Console.ReadLine();
         }
-        public static float faktoryel(int a)
-        {
+        public static float faktoryel(int a){
             int f = 1, i;
             for (i = 2; i <= a; i++)
                 f = f * i;
@@ -130,13 +147,29 @@ namespace Seri
 }
 
 ```
-</details>
+
+<!-- ----------------------------- Akış Şeması ----------------------------------- -->
+
+## 🧩 Akış Şeması
+
+### Main
+
+<img src="./SeriMainSema.png" width="200"  />
+
+### Faktoriyel
+
+<img src="./SeriFaktoriyelSema.png" width="200"  />
+
+
+<!-- ----------------------------- Ekran Çıktısı ----------------------------------- -->
 
 ## 🎉 Ekran Çıktısı
 
 ```
 69.46454
 ```
+
+<!-- ----------------------------- Notlar ----------------------------------- -->
 
 ## 💡 Notlar 
 1. Fonksiyon kavramını kullanarak önceki örnekte gördüğümüz faktöriyel hesaplama algoritmasını `faktoriyel(int a)` fonksiyonu içinde yazdık.
