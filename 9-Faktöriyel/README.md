@@ -19,26 +19,79 @@ Verilen bir sayının faktöriyelini hesaplayan algoritmayı yazınız.
 4. `f`nin değerinin yazdırılması.
 
 ## 🤖 Kod
-<details>
-<summary>Tıkla</summary>
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- C++ Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
 
+### ⚙ C++ Kodu
+
+```cpp
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int i, n, f = 1; // “i”, “f”, “n” tanımlanması
+    cout << "n=";
+    cin >> n; // “n”nin değerinin girilmesi
+    // n!’i hesaplayan döngünün oluşturulması
+    // “i=1” olduğunda sonucu etkilemeyeceği için “i=2”den başlıyoruz
+    for (i = 2; i <= n; i++)
+        f = f * i; // “f” değerini i sayacının değerleriyle çarpacak işlem
+    cout << "n!=" << f; // “f”nin değerinin yazdırılması
+ }
+```
+
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- Java Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+### ☕ Java Kodu
 
 ```java
 import java.util.*;
 public class Faktoryel {
  public static void main(String arg[]) {
   Scanner input = new Scanner(System.in);
-  int i, n, f = 1; // 1. adım
+  int i, n, f = 1; // “i”, “f”, “n” tanımlanması
   System.out.print("n=");
-  n = input.nextInt(); // 2. adım
-  for (i = 2; i <= n; i++) // 3. adım, I. nota bak
-   f = f * i; // II. nota bak
-  System.out.println("n!=" + f); // 4. adım
+  n = input.nextInt(); // “n”nin değerinin girilmesi
+  // n!’i hesaplayan döngünün oluşturulması
+  // “i=1” olduğunda sonucu etkilemeyeceği için “i=2”den başlıyoruz
+  for (i = 2; i <= n; i++) 
+   f = f * i; // “f” değerini i sayacının değerleriyle çarpacak işlem
+  System.out.println("n!=" + f); // “f”nin değerinin yazdırılması
   input.close();
  }
 }
 ```
-</details>
+
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- C# Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+### ⏹ C# Kodu
+
+```cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace Faktoryel{
+    class Program{
+        static void Main(string[] args){
+            int i, x, f = 1;
+            Console.WriteLine("n=");
+            x = Convert.ToInt32(Console.ReadLine());
+            for (i = 2; i <= x; i++)
+                f = f * i;
+            Console.WriteLine("n!=" + f);
+            Console.ReadLine();
+        }
+    }
+}
+```
 
 
 ## 🎉 Ekran Çıktısı

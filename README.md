@@ -1,4 +1,4 @@
-# 💻 Programlama-I Fasikülü ~ 2017/2018 Güz Dönemi 
+# 💻 Programlama Kitapçığı
 Programlama temellerine dayanarak hazırlanmıştır.
 
 ## 🎤 Ön Söz
@@ -6,15 +6,17 @@ Bu kitapçık, Programlama-I dersi konuları üzerinde örnekler anlatmak ve ç�
 
 ## 📑 İçerikler
 Her soru klasöründe aşağıdaki dosyalar bulunmaktadır:
+
 1. Anlatım dosyası (`README.md` dosyası)
 2. Java kod dosyası (`.java` uzantılı)
 3. C# kod dosyası (`.cs` uzantılı)
 4. Çözüm şema dosyası (`.png` uzantılı)
 5. C++ kod dosyası (Hazırlama aşamasında 👩‍💻, destek vermek istiyorsan iletişime geçersen hoş olur 🤗)
+6. Python kod dosyası (Hazırlama aşamasında 👩‍💻, destek vermek istiyorsan iletişime geçersen hoş olur 🤗)
 
-> Fasikülün PDF'ine [buradan](./res/Programlama-IKitapçığıV.1.pdf) erişebilirsin ✨🚩
+> Kitapçığın PDF'ine [buradan](./res/Programlama-IKitapçığıV.1.pdf) erişebilirsin ✨🚩
 
-## 📍 Fasikülü Nasıl Kullanmam Lazım?
+## 📍 Kitapçığı Nasıl Kullanmam Lazım?
 <img src="./res/KullanmaAlgoritmasi.PNG" width="400"  />
 
 ### 🔖 Tavsiye

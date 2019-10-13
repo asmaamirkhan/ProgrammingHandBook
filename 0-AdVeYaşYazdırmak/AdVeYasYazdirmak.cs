@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace yedinci_Program
+namespace AdVeYasYazdirmak
 {
     class Program
     {
         static void Main(string[] args)
         {
             String isim;
-            int yil, yas, buyil = 2017;
+            int yil, yas, buyil = 2019;
             Console.WriteLine("Isminizi giriniz: ");
             isim = Console.ReadLine();
             Console.WriteLine("Dogum yilinizi giriniz: ");

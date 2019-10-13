@@ -22,9 +22,38 @@
 4. Çevrilen sayının ekrana yazdırılması.
 
 ## 🤖 Kod
-<details>
-<summary>Tıkla</summary>
 
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- C++ Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+### ⚙ C++ Kodu
+
+```cpp
+#include <iostream>
+#include <math.h> 
+
+using namespace std;
+int main()
+{
+  int sayi, s = 0, i = 0, basamak; // Değişkenlerin tanımlanması
+  cin >> sayi; // Sayının girilmesi 
+  while (sayi > 0){
+   // Çevirme işleminin yapılması   
+   basamak = (int)((sayi % 2) * pow(10, i));
+   i++;
+   sayi = sayi / 2;
+   s = s + basamak;
+  }
+  cout << s; // Çevrilen sayının ekrana yazdırılması
+ }
+```
+
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- Java Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+### ☕ Java Kodu
 
 ```java
 import java.util.*;
@@ -45,8 +74,35 @@ public class TabanCevirme {
  }
 }
 ```
-</details>
 
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- C# Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+### ⏹ C# Kodu
+
+```cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace TabanCevirme{
+    class Program{
+        static void Main(string[] args){
+            int x, s = 0, i = 1;
+            x = Convert.ToInt32(Console.ReadLine());
+            while (x > 0){
+                s = s + ((x % 2) * i);
+                x = x / 2;
+                i = i * 10;
+            }
+            Console.WriteLine(s);
+            Console.ReadLine();
+        }
+    }
+}
+```
 
 ## 🎉 Ekran Çıktısı
 
