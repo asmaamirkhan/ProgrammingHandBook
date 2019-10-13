@@ -2,7 +2,7 @@
 
 
 int main() {
-	int sanliurfaNufus{ 500000 }, gaziantepNufus{ 900000 };
+	int sanliurfaNufus =  500000 , gaziantepNufus =  900000 ;
 	for (int yil = 1; ; ++yil) {
 		sanliurfaNufus = sanliurfaNufus * 102.5 / 100;
 		gaziantepNufus = gaziantepNufus * 101.4 / 100;
