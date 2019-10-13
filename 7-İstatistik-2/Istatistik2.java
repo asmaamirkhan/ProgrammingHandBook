@@ -4,7 +4,7 @@ public class Istatistik2 {
   Scanner input = new Scanner(System.in);
   int adet = 20, x, buyuk, kucuk, i, p = 0, j = 0;
 
-  // Değişkenlerin tanımlanması.
+  // Değişkenlerin tanımlanması
   float ort = 0, p_ort = 0;
 
   // İlk “x” değerinin döngüye girmeden girilmesi

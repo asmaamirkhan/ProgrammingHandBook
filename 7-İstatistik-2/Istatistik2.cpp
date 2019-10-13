@@ -11,39 +11,58 @@ using namespace std;
 //100 - 200 arasındaki sayıların sayısını bulan algoritmayı yazınız.
 
 int main() {
+	// Değişkenlerin tanımlanması
+	int i, enBuyuk, enKucuk, pozitifSayılarToplamı = 0, pozitifSayilarAdet = 0, sayilarToplami = 0;
+	int yuzIkiYuzArasında = 0, sayi;
+	float ort, pozitifOrt;
+	// İlk değerin döngüye girmeden girilmesi
+	cin >> sayi; 
+	enBuyuk = sayi;
+	enKucuk = sayi;
 
-	int enBuyuk, enKucuk;
-	int pozitifSayılarToplamı = 0, pozitifSayilarAdet = 0, sayilarToplami = 0;
-	int yüzIkiYuzArasında = 0;
-	int baslangic;
+	// Değişkenlere koşullar kontrol edilerek değer atanması
+	if(sayi > 0){
+		pozitifSayilarAdet++;
+		pozitifSayılarToplamı += sayi;
+	}
+	if(sayi > 100 && sayi < 200)
+		yuzIkiYuzArasında++;
+	sayilarToplami += sayi;
 
-	cout << "Lutfen 20 adet sayi giriniz : ";
-	for (int i = 0; i < 20; ++i) {
-		int sayi;
+	// “adet-1” kere dönen döngünün oluşturulması
+	for (i = 0; i < adet - 1; ++i) {
+		// “sayi” değerinin döngüde girilmesi
 		cin >> sayi;
-		if (i == 0) {
-			enBuyuk = sayi;
-			enKucuk = sayi;
-		}
+
+		// “sayi” değerinin “sayilarToplami”a eklenmesi
 		sayilarToplami += sayi;
+
+		// “sayi>enBuyuk” ve “sayi<enKucuk” koşulunun kontrol edilmesi. 
 		if (sayi > enBuyuk)
 			enBuyuk = sayi;
 		else if (sayi < enKucuk)
 			enKucuk = sayi;
 
+		 // Pozitif sayıların tespit edilmesi
 		if (sayi > 0) {
 			pozitifSayılarToplamı += sayi;
 			pozitifSayilarAdet++;
 		}
+
+		// 100<x<200 koşulunun kontrol edilmesi
 		if (sayi > 100 && sayi < 200)
-			yüzIkiYuzArasında++;
+			yuzIkiYuzArasında++;
 	}
 
-
-	cout << "Ortalama = " << (double)sayilarToplami / 20 << '\n';
+	// Ortalamaların hesaplanması
+	ort = sayilarToplami / adet;
+	pozitifOrt = pozitifSayılarToplamı / pozitifSayilarAdet
+	
+	// Sonuçların yazdırılması
+	cout << "Ortalama = " << ort << '\n';
 	cout << "En buyuk sayi = " << enBuyuk << '\n';
 	cout << "En kucuk sayi = " << enKucuk << '\n';
-	cout << "Pozitif olanlarin ortalamasi = " << (double)pozitifSayılarToplamı/pozitifSayilarAdet << '\n';
-	cout << "100-200 arasindaki sayilarin sayisi = " << yüzIkiYuzArasında << '\n';
+	cout << "Pozitif olanlarin ortalamasi = " << pozitifOrt << '\n';
+	cout << "100-200 arasindaki sayilarin sayisi = " << yuzIkiYuzArasında << '\n';
 
 }
