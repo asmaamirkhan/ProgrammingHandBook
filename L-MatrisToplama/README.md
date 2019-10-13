@@ -1,4 +1,4 @@
-# İki Matrisin Toplamı
+# ➕ İki Matrisin Toplamı
 
 ## ❓ Soru
 Boyutları ve elemanları klavyeden girilen iki matrisin toplamını hesaplayan programı yazınız.

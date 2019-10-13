@@ -1,4 +1,4 @@
-# Şans Oyunu
+# 🔮 Şans Oyunu
 
 ## ❓ Soru
 Şans oyunundaki sayılar iki farklı kutudan rastgele seçilmektedir. 49 adet beyaz top bulunan kutudan 5 farklı top, 42 adet kırmızı top bulunan kutudan bir top seçilmektedir.

@@ -1,4 +1,4 @@
-# İki Matrisin Çarpımı
+# ✖ İki Matrisin Çarpımı
 
 ## ❓ Soru
 Boyutları ve elemanları klavyeden girilen iki matrisin çarpımını hesaplayan programı yazınız.

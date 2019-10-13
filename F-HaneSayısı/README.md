@@ -1,4 +1,4 @@
-# Tam ve Ondalık Hane Sayısı
+# 🔢 Tam ve Ondalık Hane Sayısı
 
 ## ❓ Soru
 Rastgele girilen bir rasyonel sayının ondalık kısmının ve tam kısmının hane sayısını bulan algoritmayı yazınız.

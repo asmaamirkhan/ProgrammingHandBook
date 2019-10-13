@@ -1,4 +1,4 @@
-# Kesir Sadeleştirme
+# ✂ Kesir Sadeleştirme
 
 ## ❓ Soru
 Girilen bir kesri sadeleştiren programı yazınız.

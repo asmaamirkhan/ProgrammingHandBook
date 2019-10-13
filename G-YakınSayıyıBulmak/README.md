@@ -1,4 +1,4 @@
-# En Yakın Sayıyı Bulmak
+# 🧲 En Yakın Sayıyı Bulmak
 
 ## ❓ Soru
 Arka arkaya girilen 10 sayıdan istenilen bir sayıya en yakın olan sayıyı bulan algoritmayı yazınız.

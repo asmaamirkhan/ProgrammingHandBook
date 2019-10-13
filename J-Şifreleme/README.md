@@ -1,4 +1,4 @@
-# Şifreleme Mantığı
+# 🕶 Şifreleme Mantığı
 
 ## ❓ Soru
 Girilen bir metin üzerinde aşağıdaki işlemleri yapan programı yazınız:

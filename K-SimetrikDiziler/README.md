@@ -1,4 +1,4 @@
-# Simetrik Diziler
+# 🍏🍎 Simetrik Diziler
 
 ## ❓ Soru
 Boyutu ve elemanları klavyeden girilen bir dizinin simetrik olup olmadığını kontrol eden programı yazınız.

@@ -1,4 +1,4 @@
-# Kare Matrislerin Üzerinde İşlemler
+# 🔥 Kare Matrislerin Üzerinde İşlemler
 
 ## ❓ Soru
 Aşağıdaki fonksiyonları yazıp main içerisinde seçenek listesi olarak çağırınız.
