@@ -27,6 +27,5 @@
   - [➕ İki Matrisin Toplamı](./L-MatrisToplama/README.md)
   - [✖ İki Matrisin Çarpımı](./M-Matris%C3%87arpma/README.md)
   - [🔥 Kare Matrislerin Üzerinde İşlemler](./N-KareMatris%C4%B0%C5%9Flemleri/README.md)
-  - [res](./res)
 
 <!--Index-->
