@@ -1,4 +1,4 @@
-# Sayıları Yan Yana Yazdırmak
+# 🔢 Sayıları Yan Yana Yazdırmak
 
 <!-- ----------------------------- Soru ----------------------------------- -->
 

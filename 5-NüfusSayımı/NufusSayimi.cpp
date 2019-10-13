@@ -1,18 +1,19 @@
 #include <iostream>
-
 using namespace std;
+int main()
+{
+  // Değişkenlerin tanımlanması
+  int yil = 0, sa_nu = 500000, ga_nu = 900000;
+  while (sa_nu <= ga_nu) 
+  {
+    // Nüfusların yeniden hesaplanması
+   sa_nu = (int)(sa_nu + (sa_nu * 2.5 / 100));
+   ga_nu = (int)(ga_nu + (ga_nu * 1.4 / 100));
+   
+   // “yil” sayacının artırılması
+   yil++; 
+  }
 
-int main() {
-	int sanliurfaNufus = 500000 , gaziantepNufus = 900000 ;
-	for (int yil = 1; ; ++yil) {
-		sanliurfaNufus = sanliurfaNufus * 102.5 / 100;
-		gaziantepNufus = gaziantepNufus * 101.4 / 100;
-		if (sanliurfaNufus > gaziantepNufus) {
-			cout << yil <<" yil sonra\n";
-			cout << "Gaziantep'in nufusu :" << gaziantepNufus << '\n';
-			cout << "Sanliurfa'nin nufusu :" << sanliurfaNufus << '\n';
-			break;
-		}
-	}
-	return 0;
+  // Sonuçların ekrana yazdırılması
+  cout << yil << " yil sonra Sanliurfa nufusu " << sa_nu << " olacak "; 
 }
