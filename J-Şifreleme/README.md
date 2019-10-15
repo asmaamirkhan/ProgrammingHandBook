@@ -1,15 +1,21 @@
 # 🕶 Şifreleme Mantığı
 
+<!-- ----------------------------- Soru ----------------------------------- -->
+
 ## ❓ Soru
 Girilen bir metin üzerinde aşağıdaki işlemleri yapan programı yazınız:
 1. Metindeki harf sayısı ve rakam sayısını bulma.
 2. Küçük harfleri büyük harflere ve rakamları `(yeni_rakam = 9 - rakam)`e göre çevirme.
 3. Metnin son halini tersten yazdırma.
 
+<!-- ----------------------------- Program Kısımları ----------------------------------- -->
+
 ## ⛓ Program Kısımları
 1. Metni girmek.
 2. Metin üzerinde işlemleri yapmak.
 3. Sonuçları yazdırmak.
+
+<!-- ----------------------------- Çözüm Yöntemi ----------------------------------- -->
 
 ## 👓 Çözüm Yöntemi 
 - Büyük harfi küçük harfe çevirmek için `küçük_ch = ch – 'A' + 'a'` eşitliği kullanılır
@@ -27,6 +33,8 @@ Girilen bir metin üzerinde aşağıdaki işlemleri yapan programı yazınız:
 ```   
 - Bir dizinin tersten yazdırılması için, `for`un sayacı `dizinin uzunluğu-1`den başlar 0’a eşit olana kadar sürer.
 
+<!-- ----------------------------- Çözüm Adımları ----------------------------------- -->
+
 ## 👩‍🔧 Çözüm Adımları
 1. Değişkenlerin tanımlanması.
 2. Metnin girilmesi.
@@ -36,10 +44,15 @@ Girilen bir metin üzerinde aşağıdaki işlemleri yapan programı yazınız:
    - Karakterlerin kontrol edilmesi.
 6. Sonuçların yazdırılması.
 
-## 🤖 Kod
-<details>
-<summary>Tıkla</summary>
+<!-- ----------------------------- Kodlar ----------------------------------- -->
 
+## 🤖 Kod
+
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- Java Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+### ☕ Java Kodu
 
 ```java
 import java.util.*;
@@ -70,7 +83,8 @@ public class Sifreleme {
   }
  }
 ```
-</details>
+
+<!-- ----------------------------- Ekran Çıktısı ----------------------------------- -->
 
 
 ## 🎉 Ekran Çıktısı
@@ -80,6 +94,8 @@ Harf sayisi= 4
 Rakam sayisi= 3
 $651 %^R ANQ
 ```
+
+<!-- ----------------------------- Notlar ----------------------------------- -->
 
 ## 💡 Notlar 
 1. Dizinin uzunluğunu `.legnth()` fonksiyonunun yardımıyla elde ettik.
