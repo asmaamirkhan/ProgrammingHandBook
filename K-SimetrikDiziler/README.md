@@ -1,19 +1,27 @@
 # 🍏🍎 Simetrik Diziler
 
+<!-- ----------------------------- Soru ----------------------------------- -->
+
 ## ❓ Soru
 Boyutu ve elemanları klavyeden girilen bir dizinin simetrik olup olmadığını kontrol eden programı yazınız.
+
+<!-- ----------------------------- Program Kısımları ----------------------------------- -->
 
 ## ⛓ Program Kısımları
 1. Diziyi girmek.
 2. Dizinin simetrik olup olmadığını kontrol etmek.
 3. Sonucu yazdırmak.
    
+<!-- ----------------------------- Çözüm Yöntemi ----------------------------------- -->
+
 ## 👓 Çözüm Yöntemi 
 - Bir dizinin simetrik olması için merkezine göre simetrik elemanlar eşit olmalıdır. 
   - Örneğin: `A= {1,5,8,5,1}, B= {1,5,5,1}` dizileri simetriklerdir.
 - Başlangıç değeri `b=1` olan bir değişken tanımlanır dizinin herhangi iki simetrik elemanı eşit değilse değişkenin değeri değişecek.
 - En sonda, değişkenin değeri `1` ise dizi simetriktir, değilse dizi simetrik değildir.
-  
+
+<!-- ----------------------------- Çözüm Adımları ----------------------------------- -->
+
 ## 👩‍🔧 Çözüm Adımları
 1. Değişkenlerin tanımlanması.
 2. Boyutun girilmesi.
@@ -25,32 +33,73 @@ Boyutu ve elemanları klavyeden girilen bir dizinin simetrik olup olmadığını
      - döngü kırılır.
 6. `b`ye göre sonucun yazdırılması.
 
-## 🤖 Kod
-<details>
-<summary>Tıkla</summary>
+<!-- ----------------------------- Kodlar ----------------------------------- -->
 
+## 🤖 Kod
+
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- C++ Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+### ⚙ C++ Kodu
+
+```cpp
+#include <iostream>
+
+using namespace std;
+int main() {
+    int boyut, i, b=1, * A; // Değişkenlerin tanımlanması
+    // Boyutun girilmesi
+    cout << "Boyut=";
+    cin >> boyut;
+    A = new int[boyut]; // Dizinin tanımlanması    
+    // “boyut” kere dönen döngü kullanarak elemanların girilmesi
+    for (i = 0; i < boyut; i++) {
+        cout << "A[" << i + 1 << "]= ";
+        cin >> A[i];
+    }
+    // Dizinin başından merkezine kadar tarayan döngünün oluşturulması
+    for (i = 0; i < boyut / 2; i++) 
+        if (A[i] != A[boyut - 1 - i]) { // Simetrik elemanlar eşitlik kontrolu
+            b = 0;
+            break;
+        }
+    // “b”ye göre sonucun yazdırılması
+    if (b == 1)
+        cout << "A dizisi simetriktir";
+    else
+        cout << "A dizisi simetrik degildir";
+}
+```
+
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- Java Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+### ☕ Java Kodu
 
 ```java
 import java.util.*;
 class SimetrikDiziler {
  public static void main(String arg[]) {
   Scanner input = new Scanner(System.in);
-  int i, boyut, b = 1; //1. adim
+  int i, boyut, b = 1; // Değişkenlerin tanımlanması
   System.out.printf("Boyut=");
-  boyut = input.nextInt(); //2. adim
-  int A[] = new int[boyut]; //3. adim
-  for (i = 0; i < boyut; i++) //4. adim
-  {
+  boyut = input.nextInt(); // Boyutun girilmesi
+  int A[] = new int[boyut]; // Dizinin tanımlanması
+  // “boyut” kere dönen döngü kullanarak elemanların girilmesi
+  for (i = 0; i < boyut; i++) {
    System.out.printf("A[%d]=", i + 1);
    A[i] = input.nextInt();
   }
-  for (i = 0; i < boyut / 2; i++) //5. adim
-   if (A[i] != A[boyut - 1 - i]) //5. adim (a)
-  {
-   b = 0; //5. Adim (a)(*)
-   break; //5. Adim (a)(**)
+  // Dizinin başından merkezine kadar tarayan döngünün oluşturulması
+  for (i = 0; i < boyut / 2; i++)  
+   if (A[i] != A[boyut - 1 - i]) { // Simetrik elemanlar eşitlik kontrolu
+   b = 0;
+   break;
   }
-  if (b == 1) //6. adim
+  // “b”ye göre sonucun yazdırılması
+  if (b == 1) 
    System.out.println("A dizisi simetriktir");
   else
    System.out.println("A dizisi simetrik degildir");
@@ -58,8 +107,8 @@ class SimetrikDiziler {
  }
 }
 ```
-</details>
 
+<!-- ----------------------------- Ekran Çıktısı ----------------------------------- -->
 
 ## 🎉 Ekran Çıktısı
 
