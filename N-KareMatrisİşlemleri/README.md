@@ -1,5 +1,7 @@
 # 🔥 Kare Matrislerin Üzerinde İşlemler
 
+<!-- ----------------------------- Soru ----------------------------------- -->
+
 ## ❓ Soru
 Aşağıdaki fonksiyonları yazıp main içerisinde seçenek listesi olarak çağırınız.
 1. Bir kare matrisi okutan fonksiyon.
@@ -10,10 +12,14 @@ Aşağıdaki fonksiyonları yazıp main içerisinde seçenek listesi olarak ça�
 
 > Not: Program 6 girilene kadar sürekli çalışacaktır.
 
+<!-- ----------------------------- Program Kısımları ----------------------------------- -->
+
 ## ⛓ Program Kısımları
 1. main’de kullanılacak değişkenleri ve matrisi tanımlamak.
 2. Fonksiyonları main içerisinde switch kullanarak çağırmak.
 3. Fonksiyonları yazmak.
+
+<!-- ----------------------------- Çözüm Yöntemi ----------------------------------- -->
 
 ## 👓 Çözüm Yöntemi 
 
@@ -25,6 +31,7 @@ Aşağıdaki fonksiyonları yazıp main içerisinde seçenek listesi olarak ça�
 - Ters köşegenin her aij elemanı, `(j=n-1-i)` özelliğine sahiptir.
   - Kod örneği: `for(i=0; i<n; i++) { A[i][n-1-i] …}`
 
+<!-- ----------------------------- Çözüm Adımları ----------------------------------- -->
   
 ## 👩‍🔧 Çözüm Adımları
 1. Değişkenler ve matrisin tanımlanması.
@@ -40,53 +47,48 @@ Aşağıdaki fonksiyonları yazıp main içerisinde seçenek listesi olarak ça�
      - `secenek = 6`: switch’ten çıkılır.
      - `secenek = Diğer`: Hata mesajı verilir.
 
-<details>
-<summary>1. Matris okutma fonksiyonu</summary>
-
+### 1. Matris okutma fonksiyonu
 1. Değişkenlerin tanımlanması.
 2. Boyutun girilmesi.
 3. İç içe döngüyle elemanların girilmesi.
 4. Boyutun geri döndürülmesi.
-</details>
 
-<details>
-<summary>2. Matris yazdırma fonksiyonu</summary>
+
+### 2. Matris yazdırma fonksiyonu
 
 1. Sayaçların tanımlanması.
 2. İç içe döngüyle elemanların yazdırılması.
-</details>
 
-<details>
-<summary>3. İki satır yer değiştirme fonksiyonu</summary>
+### 3. İki satır yer değiştirme fonksiyonu
 
 1. Değişkenlerin tanımlanması.
 2. İstenen satırların girilmesi.
 3. Bir döngüyle istenen satırların elemanlarının geçici değişken kullanarak değiştirilmesi.
 
-</details>
 
-<details>
-<summary>4. Köşegen yer değiştirme fonksiyonu</summary>
+### 4. Köşegen yer değiştirme fonksiyonu
 
 1. Değişkenlerin tanımlanması.
 2. Bir döngüyle köşegenlerin elemanlarının geçici değişken kullanarak değiştirilmesi.
 
-</details>
 
-<details>
-<summary>5. Ortalama hesaplama fonksiyonu</summary>
+### 5. Ortalama hesaplama fonksiyonu
 
 1. Değişkenlerin tanımlanması.
 2. İç içe döngüyle elemanların toplanması.
 3. Toplamın “n2”ye bölünmesi.
 4. Ortalamanın geri döndürülmesi.
 
-</details>
+
+<!-- ----------------------------- Kodlar ----------------------------------- -->
 
 ## 🤖 Kod
-<details>
-<summary>Tıkla</summary>
 
+### ☕ Java Kodu
+
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- C++ Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
 
 ```java
 import java.util.*;
@@ -183,7 +185,8 @@ public class KareMatris {
  }
 }
 ```
-</details>
+
+<!-- ----------------------------- Notlar ----------------------------------- -->
 
 
 ## 💡 Notlar 
