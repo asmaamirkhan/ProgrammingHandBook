@@ -1,5 +1,8 @@
+---
+description: Programlama temellerine dayanarak hazırlanmıştır.
+---
+
 # 💻 Programlama Kitapçığı
-Programlama temellerine dayanarak hazırlanmıştır.
 
 ## 🎤 Ön Söz
 Bu kitapçık programlamaya yeni başlayanlari hedeflemektedir. Kitapçıktaki sorular programlamanın temellerini kapsamaktadır. Kitapçığın amacı algoritma kurma becerisini geliştirmek olduğundan dolayı direk kodları vermek yerine _program kısımları_, _çözüm yöntemi_ ve _çözüm adımları_ kısımlarını sunmaktadır. Kitapçıktaki sorular **kolaydan zora** doğru sıralanmıştır, her programın akış diyagramı ve farklı programlama dillerinde yazılan kodları bulunmaktadır.
