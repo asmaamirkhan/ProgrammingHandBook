@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Yirminici_Program
+namespace TabanCevirme
 {
     class Program
     {

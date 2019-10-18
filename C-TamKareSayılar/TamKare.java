@@ -13,7 +13,7 @@ public class TamKare {
   for (i = 0; i <= x / 2 + 1; i++)
   {
    // Koşulun kontrol edilmesi.
-   if (x == i * i) // 3. adım (a)
+   if (x == i * i) 
    {
     t = 1;
     // Fazladan işlem yaptırmamak için karekökü bulunduğunda döngüden çıkarız.

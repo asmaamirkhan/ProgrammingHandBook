@@ -1,18 +1,25 @@
-# Tam Kare Sayılar
+# 🔲 Tam Kare Sayılar
+
+<!-- ----------------------------- Soru ----------------------------------- -->
 
 ## ❓ Soru
 Girilen bir tamsayının tam kare olup olmadığını bulan algoritmayı yazınız.
+
+<!-- ----------------------------- Program Kısımları ----------------------------------- -->
 
 ## ⛓ Program Kısımları
 1. Sayı girmek.
 2. Tam kare olup olmadığını tespit etmek.
 3. Sonucu ekrana yazdırmak.
 
+<!-- ----------------------------- Çözüm Yöntemi ----------------------------------- -->
    
 ## 👓 Çözüm Yöntemi 
 - Bir `x` sayısı tam kare olması için `(x=i*i)` koşulunu sağlayan bir `i` bulunması lazım.
 - `i`yi bulmak için 0 ile `(x/2+1)` arasındaki sayıları kontrol ederiz.
-  
+
+<!-- ----------------------------- Çözüm Adımları ----------------------------------- -->
+
 ## 👩‍🔧 Çözüm Adımları
 1. Değişkenlerin tanımlanması.
 2. `x`in girilmesi.
@@ -20,34 +27,27 @@ Girilen bir tamsayının tam kare olup olmadığını bulan algoritmayı yazın�
 a- Koşulun kontrol edilmesi.
 4. Sonucun yazdırılması.
 
+<!-- ----------------------------- Kodlar ----------------------------------- -->
+
 ## 🤖 Kod
 
 [//]: ------------------------------------------------------------------------------
 <!-- ----------------------------- C++ Kodu ----------------------------------- -->
 [//]: ------------------------------------------------------------------------------
 
-<details>
-<summary><b>C++ Kodu</b></summary>
+### ⚙ C++ Kodu
 
 ```cpp
 #include <iostream>
-
-#include <string>
-
 using namespace std;
 int main() {
-  // Değişkenlerin tanımlanması
-  int i, x, t = 0;
-  // “x”in girilmesi
-  cin >> x;
-  // (X/2+1) kere dönen döngünün oluşturulması
-  for (i = 0; i <= x / 2 + 1; i++) {
-    // Koşulun kontrol edilmesi.
-    if (x == i * i) 
+  int i, x, t = 0; // Değişkenlerin tanımlanması
+  cin >> x; // “x”in girilmesi
+  for (i = 0; i <= x / 2 + 1; i++) { // (X/2+1) kere dönen döngünün oluşturulması
+    if (x == i * i)  // Koşulun kontrol edilmesi
     {
       t = 1;
-      // Fazladan işlem yaptırmamak için karekökü bulunduğunda döngüden çıkarız.
-      break;
+      break; // Fazladan işlem yaptırmamak için karekökü bulunduğunda döngüden çıkarız
     }
   }
   // Koşulun sağlanıp sağlanmadığını kontrol etmek için “t”yi kullandık, çünkü koşul sağlandığında “t” değişecek
@@ -58,47 +58,65 @@ int main() {
     cout << "tam kare degil";
 }
 ```
-</details>
 
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- Python Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+### 🐍 Python Kodu
+
+```py
+t = 0 # Değişkenlerin tanımlanması
+x = int(input()) # “x”in girilmesi
+for i in range(0,x//2 +2): # (X//2+2) kere dönen döngünün oluşturulması
+    if (x == i * i): # Koşulun kontrol edilmesi
+        t = 1
+        break # Fazladan işlem yaptırmamak için karekökü bulunduğunda döngüden çıkarız
+# Koşulun sağlanıp sağlanmadığını kontrol etmek için “t”yi kullandık, çünkü koşul sağlandığında “t” değişecek
+# Sonucun yazdırılması
+if (t != 0):
+    print("tam kare")
+else:
+    print("tam kare degil")
+```
 
 [//]: ------------------------------------------------------------------------------
 <!-- ----------------------------- Java Kodu ----------------------------------- -->
 [//]: ------------------------------------------------------------------------------
 
-<details>
-<summary><b>Java Kodu</b></summary>
+### ☕ Java Kodu
 
 ```java
 import java.util.*;
 public class TamKare {
  public static void main(String arg[]) {
   Scanner input = new Scanner(System.in);
-  int i, x, t = 0; // 1. adım
-  x = input.nextInt(); // 2. adım
-  for (i = 0; i <= x / 2 + 1; i++) // 3. adım
-  {
-   if (x == i * i) // 3. adım (a)
+  int i, x, t = 0; // Değişkenlerin tanımlanması
+  x = input.nextInt(); // “x”in girilmesi
+  for (i = 0; i <= x / 2 + 1; i++) { // (X/2+1) kere dönen döngünün oluşturulması
+   // Koşulun kontrol edilmesi
+   if (x == i * i) 
    {
     t = 1;
-    break; // I. nota bak
+    break; // Fazladan işlem yaptırmamak için karekökü bulunduğunda döngüden çıkarız
    }
   }
-  if (t != 0) // II. nota bak
-   System.out.println("tam kare"); // 4. adım
+  // Koşulun sağlanıp sağlanmadığını kontrol etmek için “t”yi kullandık, çünkü koşul sağlandığında “t” değişecek
+  // Sonucun yazdırılması
+  if (t != 0)
+   System.out.println("tam kare"); 
   else
    System.out.println("tam kare degil");
   input.close();
  }
 }
 ```
-</details>
 
 [//]: ------------------------------------------------------------------------------
 <!-- ----------------------------- C# Kodu ----------------------------------- -->
 [//]: ------------------------------------------------------------------------------
 
-<details>
-<summary><b>C# Kodu</b></summary>
+### ⏹ C# Kodu
 
 ```cs
 using System;
@@ -106,33 +124,36 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace TamKare
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            int i, x, t = 0;
-            x = Convert.ToInt32(Console.ReadLine());
-            for (i = 0; i <= x / 2 + 1; i++)
-            {
-                if (x == i * i)
-                {
+namespace TamKare {
+    class Program {
+        static void Main(string[] args) {
+            int i, x, t = 0; // Değişkenlerin tanımlanması
+            x = Convert.ToInt32(Console.ReadLine()); // “x”in girilmesi
+            for (i = 0; i <= x / 2 + 1; i++) { // (X/2+1) kere dönen döngünün oluşturulması
+                if (x == i * i) {
                     t = 1;
-                    break;
+                    break; // Fazladan işlem yaptırmamak için karekökü bulunduğunda döngüden çıkarız
                 }
             }
+            // Koşulun sağlanıp sağlanmadığını kontrol etmek için “t”yi kullandık, çünkü koşul sağlandığında “t” değişecek
+            // Sonucun yazdırılması
             if (t == 1)
                 Console.WriteLine("tam kare");
-		else
-			Console.WriteLine("tam kare degil");
+		        else
+			        Console.WriteLine("tam kare degil");
             Console.ReadLine();
         }
     }
 }
 ```
-</details>
+
+<!-- ----------------------------- Akış Şeması ----------------------------------- -->
+
+## 🧩 Akış Şeması
+
+<img src="./TamKareSema.png" width="200"  />
+
+<!-- ----------------------------- Ekran Çıktısı ----------------------------------- -->
 
 ## 🎉 Ekran Çıktısı
 
@@ -142,6 +163,8 @@ tam kare
 27
 tam kare degil
 ```
+
+<!-- ----------------------------- Notlar ----------------------------------- -->
 
 ## 💡 Notlar 
 1. Fazladan işlem yaptırmamak için karekökü bulunduğunda döngüden çıkarız.

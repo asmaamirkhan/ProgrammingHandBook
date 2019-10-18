@@ -8,7 +8,7 @@ public class AdVeYasYazdirmak {
   String isim;
   
   // “yil”, “yas”, “buyil”ın tanımlanması
-  int yil, yas, buyil = 2017; 
+  int yil, yas, buyil = 2019; 
   System.out.print("Isminizi giriniz: ");
   
   // “isim” ve “yil”ın girilmesi
