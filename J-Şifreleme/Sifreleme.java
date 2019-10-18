@@ -1,6 +1,5 @@
 import java.util.*;
 public class Sifreleme {
- public static void main(String arg[]) {
   public static void main(String arg[]) {
    Scanner input = new Scanner(System.in);
 
@@ -35,6 +34,7 @@ public class Sifreleme {
    // Sonuçların yazdırılması
    System.out.println("Harf sayisi= " + harf_sayi); 
    System.out.println("Rakam sayisi= " + rakam_sayi);
-   System.out.print(harfler[i]);
+   for(i = metin.length()-1; i>=0; i--)
+			System.out.print(harfler[i]);
   }
  }

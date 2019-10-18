@@ -49,6 +49,71 @@ Girilen bir metin üzerinde aşağıdaki işlemleri yapan programı yazınız:
 ## 🤖 Kod
 
 [//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- C++ Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+### ⚙ C++ Kodu
+
+```cpp
+#include <iostream>
+using namespace std;
+int main() {
+    // Değişkenlerin tanımlanması
+    int i, harf_sayi = 0, rakam_sayi = 0;
+    string metin;
+    getline(cin, metin); // Metnin girilmesi
+    cout << metin;
+    // Metnin uzunluğu kadar dönen döngünün oluşturulması
+    for (i = 0; i < metin.length(); i++) {
+        // Karakterlerin kontrol edilmesi.   
+        if (metin[i] >= 'a' && metin[i] <= 'z') {
+            metin[i] = (char)(metin[i] - 'a' + 'A');
+            harf_sayi++;
+        } else
+        if (metin[i] >= 'A' && metin[i] <= 'Z')
+            harf_sayi++;
+        else if (metin[i] >= '0' && metin[i] <= '9') {
+            metin[i] = (char)('9' - metin[i] + '0');
+            rakam_sayi++;
+        }
+    }
+    // Sonuçların yazdırılması
+    cout << "Harf sayisi= " << harf_sayi << endl;
+    cout << "Rakam sayisi= " << rakam_sayi << endl;
+    for (i = metin.length() - 1; i >= 0; i--)
+        cout << metin[i];
+}
+```
+
+[//]: ------------------------------------------------------------------------------
+<!-- ----------------------------- C++ Kodu ----------------------------------- -->
+[//]: ------------------------------------------------------------------------------
+
+### 🐍 Python Kodu
+
+```py
+harf_sayi = 0; rakam_sayi = 0 # Değişkenlerin tanımlanması
+metin = list(str(input())) # Metnin girilmesi
+# Metnin uzunluğu kadar dönen döngünün oluşturulması
+for karakter in metin:
+    # Karakterlerin kontrol edilmesi.   
+    if karakter >= 'a' and karakter <= 'z': 
+        karakter = chr(ord(karakter) - ord('a') + ord('A'))
+        harf_sayi += 1
+    elif karakter >= 'A' and karakter <= 'Z':
+        harf_sayi += 1
+    elif karakter >= '0' and karakter <= '9': 
+        karakter = chr(ord('9') - ord(karakter) + ord('0'))
+        rakam_sayi += 1
+        
+# Sonuçların yazdırılması
+print("Harf sayisi= ", harf_sayi) 
+print("Rakam sayisi= ", rakam_sayi)
+sonuc = ''.join(metin)
+print(sonuc[::-1])
+```
+
+[//]: ------------------------------------------------------------------------------
 <!-- ----------------------------- Java Kodu ----------------------------------- -->
 [//]: ------------------------------------------------------------------------------
 
@@ -57,16 +122,18 @@ Girilen bir metin üzerinde aşağıdaki işlemleri yapan programı yazınız:
 ```java
 import java.util.*;
 public class Sifreleme {
- public static void main(String arg[]) {
   public static void main(String arg[]) {
    Scanner input = new Scanner(System.in);
-   int i, harf_sayi = 0, rakam_sayi = 0; // 1. Adım
+   // Değişkenlerin tanımlanması
+   int i, harf_sayi = 0, rakam_sayi = 0;
    String metin;
-   metin = input.nextLine(); // 2. Adım
-   char harfler[] = new char[metin.length()]; // 3. Adım
-   harfler = metin.toCharArray(); // 4. Adım
-   for (i = 0; i < metin.length(); i++) { // 5. Adım
-    if (harfler[i] >= 'a' && harfler[i] <= 'z') { // 5. Adım (a)
+   metin = input.nextLine(); // Metnin girilmesi
+   char harfler[] = new char[metin.length()]; // Harfler dizisinin oluşturulması
+   harfler = metin.toCharArray(); // Metnin string’den char dizisine çevrilmesi
+   // Metnin uzunluğu kadar dönen döngünün oluşturulması
+   for (i = 0; i < metin.length(); i++) { 
+    // Karakterlerin kontrol edilmesi.   
+    if (harfler[i] >= 'a' && harfler[i] <= 'z') {
      harfler[i] = (char)(harfler[i] - 'a' + 'A');
      harf_sayi++;
     } else
@@ -77,9 +144,11 @@ public class Sifreleme {
      rakam_sayi++;
     }
    }
-   System.out.println("Harf sayisi= " + harf_sayi); // 6. Adım
+   // Sonuçların yazdırılması
+   System.out.println("Harf sayisi= " + harf_sayi); 
    System.out.println("Rakam sayisi= " + rakam_sayi);
-   System.out.print(harfler[i]);
+   for(i = metin.length()-1; i>=0; i--)
+			System.out.print(harfler[i]);
   }
  }
 ```
@@ -90,6 +159,7 @@ public class Sifreleme {
 ## 🎉 Ekran Çıktısı
 
 ```
+QNa r^% 843$
 Harf sayisi= 4
 Rakam sayisi= 3
 $651 %^R ANQ
