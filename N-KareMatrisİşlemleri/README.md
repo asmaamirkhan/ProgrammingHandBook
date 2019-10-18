@@ -150,7 +150,7 @@ while True:
 3- 2 satiri degistirmek\n4- Kosegenleri degistirmek
 5- Elemanlar ortalamasini hesaplamak\n6- Exit
   Yukaridakilerden bir tane seciniz:""")
-  secenek = int(input())
+  secenek = int(input()) # Seçeneğin girilmesi
   # Girilen seçeneğe göre istenen fonksiyonun çağrılması
   if secenek == 1:
     A = gir_mat()
@@ -181,36 +181,30 @@ public class KareMatris {
  static final int max = 10;
  static Scanner input = new Scanner(System.in);
  public static void main(String arg[]) {
-  int n1 = 0, secenek; // 1. adım
+  int n1 = 0, secenek; 
   int P[][] = new int[max][max];
   do {
-   System.out.printf("========================= ===== \n1- Yeni Matris girmek\n2- Matrisi yazdirmak\n3- 2 satiri degistirmek\n4- Kosegenleri degistirmek\n5- Elemanlar ortalamasini hesaplamak\n6- Exit\nYukaridakilerden bir tane seciniz:"); // 2. Adım (a)
-   secenek = input.nextInt(); // 2. Adım (b)
-   switch (secenek) { // 2. Adım (c)
+   // Seçenek listesinin yazdırılması
+   System.out.printf("========================= ===== \n1- Yeni Matris girmek\n2- Matrisi yazdirmak\n3- 2 satiri degistirmek\n4- Kosegenleri degistirmek\n5- Elemanlar ortalamasini hesaplamak\n6- Exit\nYukaridakilerden bir tane seciniz:");
+   // Seçeneğin girilmesi
+   secenek = input.nextInt(); 
+   // Girilen seçeneğe göre istenen fonksiyonun çağrılması
+   switch (secenek) { 
     case 1:
-     {
       n1 = gir_mat(P);
-     }
+      break;
     case 2:
-     {
       print_mat(P, n1);
       break;
-     }
     case 3:
-     {
       satir_degistir(P, n1);
       break;
-     }
     case 4:
-     {
       kosegen_degistir(P, n1);
       break;
-     }
     case 5:
-     {
       System.out.printf("Ortalama= %f\n", ortalama(P, n1));
       break;
-     }
     case 6:
      break;
     default:
@@ -218,57 +212,73 @@ public class KareMatris {
    }
   } while (secenek != 6);
  }
- static int gir_mat(int a[][]) { // 1. Adım
-  int i, j, n; // 1. Adım (a)
+ 
+ static int gir_mat(int a[][]) { 
+  // Değişkenlerin tanımlanması
+  int i, j, n; 
+  // Boyutun girilmesi
   System.out.printf("Matrisin boyutunu giriniz: ");
-  n = input.nextInt(); // 1. Adım (b)
-  for (i = 0; i < n; i++) // 1. Adım (c)
+  n = input.nextInt();
+  // İç içe döngüyle elemanların girilmesi 
+  for (i = 0; i < n; i++) 
    for (j = 0; j < n; j++) {
     System.out.printf("P[%d][%d]=", i + 1, j + 1);
     a[i][j] = input.nextInt();
    }
+  // Boyutun geri döndürülmesi
   return n;
- } // 1. Adım (d)
- static void print_mat(int a[][], int n) { // 2. Adım
-  int i, j; // 2. Adım (a)
+ }
+ static void print_mat(int a[][], int n) { 
+  // Sayaçların tanımlanması
+  int i, j; 
+  // İç içe döngüyle elemanların yazdırılması
   System.out.printf("P Matrisi:\n");
   for (i = 0; i < n; i++) {
    for (j = 0; j < n; j++)
-    System.out.printf("%d\t", a[i][j]); // 2. Adım (b)
+    System.out.printf("%d\t", a[i][j]); 
    System.out.printf("\n");
   }
  }
- static void satir_degistir(int a[][], int n) { // 3. Adım
-  int i, satir1, satir2, temp; // 3. Adım (a)
+ static void satir_degistir(int a[][], int n) { 
+  // Değişkenlerin tanımlanması
+  int i, satir1, satir2, temp;
+  // İstenen satırların girilmesi
   System.out.printf("Degistirmek istediginiz satirlari girininz:\n");
-  satir1 = input.nextInt(); // 3. Adım (b)
+  satir1 = input.nextInt(); 
   satir2 = input.nextInt();
+  // Bir döngüyle istenen satırların elemanlarının geçici değişken kullanarak değiştirilmesi
   for (i = 0; i < n; i++) {
-   temp = a[satir1 - 1][i]; // 3. Adım (c)
+   temp = a[satir1 - 1][i]; 
    a[satir1 - 1][i] = a[satir2 - 1][i];
    a[satir2 - 1][i] = temp;
   }
   System.out.printf("%d. satir & %d. satir degistirildi.\n", satir1, satir2);
  }
- static void kosegen_degistir(int a[][], int n) { // 4. Adım
-  int i, temp; // 4. Adım (a)
+ static void kosegen_degistir(int a[][], int n) {
+  // Değişkenlerin tanımlanması
+  int i, temp; 
+  // Bir döngüyle köşegenlerin elemanlarının geçici değişken kullanarak değiştirilmesi
   for (i = 0; i < n; i++) {
-   temp = a[i][i]; // 4. Adım (b)
+   temp = a[i][i]; 
    a[i][i] = a[i][n - 1 - i];
    a[i][n - 1 - i] = temp;
   }
   System.out.printf("Kosegenler degistirildi.\n");
  }
- static float ortalama(int a[][], int n) { // 5. Adım
-  int toplam = 0, i, j; // 5. Adım (a)
+ static float ortalama(int a[][], int n) { 
+  // Değişkenlerin tanımlanması
+  int toplam = 0, i, j; 
   float ort;
-  for (i = 0; i < n; i++) // 5. Adım (b)
+  // İç içe döngüyle elemanların toplanması
+  for (i = 0; i < n; i++) 
    for (j = 0; j < n; j++)
     toplam += a[i][j];
-  ort = (float) toplam / (n * n); // 5. Adım (c)
-  return ort; // 5. Adım (d)
+  // Toplamın “n üzeri 2”ye bölünmesi  
+  ort = (float) toplam / (n * n);
+  // Ortalamanın geri döndürülmesi
+  return ort; 
  }
-}
+}   
 ```
 
 <!-- ----------------------------- Notlar ----------------------------------- -->
