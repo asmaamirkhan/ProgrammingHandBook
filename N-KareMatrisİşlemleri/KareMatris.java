@@ -6,7 +6,7 @@ public class KareMatris {
   int n1 = 0, secenek; 
   int P[][] = new int[max][max];
   do {
-   System.out.printf("========================= ===== \n1- Yeni Matris girmek\n2- Matrisi yazdirmak\n3- 2 satiri degistirmek\n4- Kosegenleri degistirmek\n5- Elemanlar ortalamasini hesaplamak\n6- Exit\nYukaridakilerden bir tane seciniz:"); // 2. Adım (a)
+   System.out.printf("========================= ===== \n1- Yeni Matris girmek\n2- Matrisi yazdirmak\n3- 2 satiri degistirmek\n4- Kosegenleri degistirmek\n5- Elemanlar ortalamasini hesaplamak\n6- Exit\nYukaridakilerden bir tane seciniz:");
    secenek = input.nextInt(); 
    switch (secenek) { 
     case 1:
