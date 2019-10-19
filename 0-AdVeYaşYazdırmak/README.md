@@ -71,7 +71,7 @@ buyil = 2019 # Bu yılın tarihi icin "buyil" in tanımlanması
 isim = input("Isminizi giriniz: ")
 yil = int(input("Dogum yilinizi giriniz: "))
 yas = buyil - yil # “yas”ın değerinin hesaplanması
-print("isminiz: ",isim,"Yasiniz: ",yas) # “isim” ve “yas”ın ekrana yazdırılması
+print("isminiz: ", isim, "Yasiniz: ", yas) # “isim” ve “yas”ın ekrana yazdırılması
 ```
 
 [//]: ------------------------------------------------------------------------------

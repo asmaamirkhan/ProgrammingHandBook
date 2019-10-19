@@ -78,9 +78,9 @@ int main() {
 # Değişkenlerin tanımlanması
 t_adet = 0; c_adet = 0; t_toplam = 0
 t_ort = 0; c_toplam = 0; c_ort = 0
-for i in range(2,101): # 2’den 100’a kadar döngünün oluşturulması
+for i in range(2, 101): # 2’den 100’a kadar döngünün oluşturulması
     if(i % 2 == 1): #  Koşulun kontrol edilmesi
-        t_adet +=1 # Tek sayılar adedinin artırılması
+        t_adet += 1 # Tek sayılar adedinin artırılması
         t_toplam = t_toplam + i # Tek sayılar toplamına “i” değerinin eklenmesi
     else:
         c_adet += 1 #  çift sayılar adedinin artırılması
@@ -89,10 +89,10 @@ for i in range(2,101): # 2’den 100’a kadar döngünün oluşturulması
 t_ort = t_toplam / t_adet
 c_ort = c_toplam / c_adet
 # Sonuçların yazdırılması
-print("Teklerin toplami= ",t_toplam)
-print("Teklerin ortalamasi= ",t_ort)
-print("Ciftlerin toplami= ",c_toplam)
-print("Ciftlerin ortalamasi= ",c_ort)
+print("Teklerin toplami= ", t_toplam)
+print("Teklerin ortalamasi= ", t_ort)
+print("Ciftlerin toplami= ", c_toplam)
+print("Ciftlerin ortalamasi= ", c_ort)
 ```
 
 [//]: ------------------------------------------------------------------------------

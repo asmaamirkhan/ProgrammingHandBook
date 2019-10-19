@@ -64,7 +64,7 @@ print("3 haneli sayi giriniz: ")
 # “x”in girilmesi
 x = int(input())
 # 3 kere dönen döngünün oluşturulması
-for i in range(0,3):
+for i in range(0, 3):
     print(x % 10) #  Kalanın yazdırılması
     x = x / 10 # “x”in onlar basamağının birler basamağına dönüştürülmesi
 

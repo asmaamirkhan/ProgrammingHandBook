@@ -66,7 +66,7 @@ n = int(input("n= ")) # “n”nin değerinin girilmesi
 # “i=1” olduğunda sonucu etkilemeyeceği için “i=2”den başlıyoruz.
 # range() foksiyonun özelliğinden dolayı range fonsiyonu bitiş değeri
 # n+1 olarak vereceğiz.
-for i in range(2,n+1):
+for i in range(2, n+1):
     f = f * i # “f” değerini i sayacının değerleriyle çarpacak işlem
 print("n!=", f) # “f”nin değerinin yazdırılması
 ```

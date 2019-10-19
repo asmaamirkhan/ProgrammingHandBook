@@ -113,7 +113,7 @@ if (x > 0):
 if (x > 100 and x < 200) :
       j += 1
       ort = ort + x
-for i in range(0,adet-1): # “adet-1” kere dönen döngünün oluşturulması
+for i in range(0, adet-1): # “adet-1” kere dönen döngünün oluşturulması
     x = int(input()) # “x” değerinin döngüde girilmesi
     if(x > 0): # Pozitif sayıların tespit edilmesi
         p_ort = p_ort + x
@@ -130,11 +130,11 @@ for i in range(0,adet-1): # “adet-1” kere dönen döngünün oluşturulması
 ort = ort / adet
 p_ort = p_ort / p
 # Sonuçların yazdırılması
-print("Ortalama= ",ort)
-print("En buyuk sayi= ",buyuk)
-print("En kucuk sayi= ",kucuk)
-print("Pozitif olanlarin ortalamasi= ",p_ort)
-print("100-200 arasindaki sayilarin sayisi= ",j)
+print("Ortalama= ", ort)
+print("En buyuk sayi= ", buyuk)
+print("En kucuk sayi= ", kucuk)
+print("Pozitif olanlarin ortalamasi= ", p_ort)
+print("100-200 arasindaki sayilarin sayisi= ", j)
 ```
 
 [//]: ------------------------------------------------------------------------------
