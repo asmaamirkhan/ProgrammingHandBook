@@ -3,6 +3,7 @@
 # Summary
 
 - [💻 Programlama Kitapçığı](./README.md)
+  - [👩‍🏫 Kitapçığın Planı](./Plan.md)
   - [🎰 Adı ve Hesaplanan Yaşı Yazdırmak](./0-AdVeYa%C5%9FYazd%C4%B1rmak/README.md)
   - [➗ İki Sayının Tam Bölünüp Bölünmemesini Tespit Etmek](./1-%C4%B0kiSay%C4%B1n%C4%B1nB%C3%B6l%C3%BCnmesi/README.md)
   - [🔢 Sayıları Yan Yana Yazdırmak](./2-Say%C4%B1lar%C4%B1Yazd%C4%B1rmak/README.md)
@@ -27,6 +28,5 @@
   - [➕ İki Matrisin Toplamı](./L-MatrisToplama/README.md)
   - [✖ İki Matrisin Çarpımı](./M-Matris%C3%87arpma/README.md)
   - [🔥 Kare Matrislerin Üzerinde İşlemler](./N-KareMatris%C4%B0%C5%9Flemleri/README.md)
-  - [👩‍🏫 Kitapçığın Planı](./Plan.md)
 
 <!--Index-->
