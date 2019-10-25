@@ -105,7 +105,7 @@ else:
 
 ```java
 import java.util.*;
-public class onikinci_Program {
+public class IkiSayininBolunmesi {
  public static void main(String arg[]) {
   Scanner input = new Scanner(System.in);
   int a, b, c; // “a”, “b”, “c” tanımlanması
