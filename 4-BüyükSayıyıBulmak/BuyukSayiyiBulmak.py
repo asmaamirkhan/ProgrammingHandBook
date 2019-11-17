@@ -14,4 +14,4 @@ for i in range(0,9):
         buyuk = sayi
 
 #  “buyuk”ün ekrana yazdırılması.
-print("En Buyuk sayi= ",buyuk)
+print("En Buyuk sayi= ", buyuk)

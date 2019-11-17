@@ -14,7 +14,7 @@ if(a < b):
     b = c
 
 #0 ise “Tam Bolunebilir” yazdırılması
-if(a%b == 0):
+if(a % b == 0):
     print("Tam Bolunebilir")
 else:
     print("Tam Bolunemez")

@@ -25,10 +25,10 @@ int main()
   
     // 0 ise “Tam Bolunebilir” yazdırılması
     if (a % b == 0) 
-        cout<<"Tam Bolunebilir";
+        cout << "Tam Bolunebilir";
     // 0 değilse “Tam Bolunemez” yazdırılması
     else 
-        cout<<"Tam Bolunemez";
+        cout << "Tam Bolunemez";
     
     return 0;
 }

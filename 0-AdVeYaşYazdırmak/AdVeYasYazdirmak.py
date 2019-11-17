@@ -21,4 +21,4 @@ yas = buyil - yil
 
 #“isim” ve “yas”ın ekrana yazdırılması
 
-print("isminiz: ",isim,"Yasiniz: ",yas)
+print("isminiz: ", isim, "Yasiniz: ", yas)

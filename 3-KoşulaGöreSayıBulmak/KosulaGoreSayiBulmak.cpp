@@ -9,7 +9,6 @@ int main() {
 		if ((i * 2 + 1) % 5 == 0)
 			++sayac;
 	}
-	cout <<"adet : "<< sayac << '\n';
-
+	cout << "adet : " << sayac << '\n';
 	return 0;
 }
