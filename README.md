@@ -31,7 +31,7 @@ Hemen koda bakmaktansa yukarıda anlatılan şekilde yapsan kitapçık daha fayd
 Bu kitapçık Programlama-I dersi kapsamında hazırlanıp bazı kısımları 2017/2018 eğitim yılında Kocaeli Üniversitesi'nde workshop şeklinde sunulmuştur 📚
 
 ## 🙌 Hazırlayanlar
-- Asmaa Mirkhan ~ [Linkedin 🔗](https://www.linkedin.com/in/asmaa-mirkhan/) - [GitHub 🔗](https://github.com/asmaamirkhan)
+- Asmaa Mirkhan ~ [Linkedin 🔗](https://www.linkedin.com/in/asmaamirkhan/) - [GitHub 🔗](https://github.com/asmaamirkhan)
 - Mohammad AlBadwieh ~ [Linkedin 🔗](https://www.linkedin.com/in/mhdb96/) - [GitHub 🔗](https://github.com/mhdb96)
 
 ## 🤝 Katkıda Bulunanlar
