@@ -1,6 +1,6 @@
 def is_tam_kare(x):
     t = 0
-    for i in range(0,x//2+2):
+    for i in range(0, x // 2 + 2):
         if (x == i * i):
             t = 1
             break
@@ -31,5 +31,3 @@ if (kalan % 2 == 0):
 else:
     # Sonuçların yazdırılması
     print("cift degil")
-
-

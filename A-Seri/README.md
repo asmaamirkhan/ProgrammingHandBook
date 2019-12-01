@@ -71,7 +71,7 @@ int main()
 def faktoriyel(a):
     f = 1
     i = 0
-    for i in range(2, a+1):
+    for i in range(2, a + 1):
         f = f * i
     return f
 

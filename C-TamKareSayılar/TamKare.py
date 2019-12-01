@@ -7,7 +7,7 @@ t = 0
 x = int(input())
 
 # (X//2+2) kere dönen döngünün oluşturulması
-for i in range(0,x//2 +2):
+for i in range(0, x // 2 + 2):
     # Koşulun kontrol edilmesi.
     if (x == i * i):
         t = 1

@@ -1,5 +1,5 @@
 # 11’den 99’a kadar döngünün oluşturulması.
-for i in range(11,100):
+for i in range(11, 100):
     # “x”e yeni değerinin atanması
     x = 2
     j = 0

@@ -68,7 +68,7 @@ int main() {
 ```py
 t = 0 # Değişkenlerin tanımlanması
 x = int(input()) # “x”in girilmesi
-for i in range(0, x//2 + 2): # (X//2+2) kere dönen döngünün oluşturulması
+for i in range(0, x // 2 + 2): # (X//2+2) kere dönen döngünün oluşturulması
     if (x == i * i): # Koşulun kontrol edilmesi
         t = 1
         break # Fazladan işlem yaptırmamak için karekökü bulunduğunda döngüden çıkarız
