@@ -39,6 +39,7 @@
 
 ```cpp
 #include <iostream>
+#include <cmath>
 using namespace std;
 int main()
 {
@@ -70,6 +71,7 @@ int main()
 ### 🐍 Python Kodu
 
 ```py
+import math
 # 11’den 99’a kadar döngünün oluşturulması.
 for i in range(11, 100):
     # “x”e yeni değerinin atanması

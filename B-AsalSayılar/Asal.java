@@ -1,4 +1,3 @@
-import java.lang.Math; 
 public class Asal {
  public static void main(String arg[]) {
   
