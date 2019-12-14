@@ -79,8 +79,8 @@ for i in range(11, 100):
     # “x” değeri hiçbir zaman (kök(i)+1) değeri ile “i”yi bölemez.
     # Bu yüzden bu değerin (kök(i)+1) üstünü kontrol etmeye gerek yoktur
     while (x != int(math.sqrt(i)) + 1):
-        if (i%x == 0): # “x”in “i”nin bir böleni olup olmadığının kontrol edilmesi
-            j =1
+        if (i % x == 0): # “x”in “i”nin bir böleni olup olmadığının kontrol edilmesi
+            j = 1
             break # En az bir bölen bulunursa sayının asal olmadığını öğrenmek için yeterlidir
         else:
             x += 1
