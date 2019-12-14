@@ -14,7 +14,7 @@ namespace Asal
             for (i = 11; i < 100; i++)
             {
                 x = 2; j = 0;
-                while (x != i)
+                while (x != (int)(Math.Sqrt(i)) + 1)
                 {
                     if (i % x == 0)
                     {

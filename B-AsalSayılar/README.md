@@ -47,10 +47,10 @@ int main()
         // “x” ile “j”ye başlangıç değerinin atanması   
         x = 2;
         j = 0; 
-        // “x” ile “i/2+1” eşit olmadığı sürece:
-        // “x” değeri hiçbir zaman (i/2+1) değeri ile “i”yi bölemez.
-        // Bu yüzden bu değerin (i/2+1) üstünü kontrol etmeye gerek yoktur
-        while (x != i / 2 + 1){
+        // “x” ile (kök(i)+1) eşit olmadığı sürece:
+        // “x” değeri hiçbir zaman (kök(i)+1) değeri ile “i”yi bölemez.
+        // Bu yüzden bu değerin (kök(i)+1) üstünü kontrol etmeye gerek yoktur
+        while (x != (int)(sqrt(i)) + 1){
             if (i % x == 0) { // “x”in “i”nin bir böleni olup olmadığının kontrol edilmesi   
                 j = 1;
                 break; // En az bir bölen bulunursa sayının asal olmadığını öğrenmek için yeterlidir 
@@ -61,7 +61,6 @@ int main()
         cout << i << " "; // Asal sayıların ekrana yazdırılması 
     }
  }
-
 ```
 
 [//]: ------------------------------------------------------------------------------
@@ -76,9 +75,10 @@ for i in range(11, 100):
     # “x”e yeni değerinin atanması
     x = 2
     j = 0
-    # “x” ile “i” eşit olmadığı sürece:
-    # döngü devam edecek
-    while (x != i):
+    # “x” ile (kök(i)+1) eşit olmadığı sürece:
+    # “x” değeri hiçbir zaman (kök(i)+1) değeri ile “i”yi bölemez.
+    # Bu yüzden bu değerin (kök(i)+1) üstünü kontrol etmeye gerek yoktur
+    while (x != int(math.sqrt(i)) + 1):
         if (i%x == 0): # “x”in “i”nin bir böleni olup olmadığının kontrol edilmesi
             j =1
             break # En az bir bölen bulunursa sayının asal olmadığını öğrenmek için yeterlidir
@@ -103,10 +103,10 @@ public class Asal {
    // “x” ile “j”ye başlangıç değerinin atanması   
    x = 2;
    j = 0; 
-   // “x” ile “i/2+1” eşit olmadığı sürece:
-   // “x” değeri hiçbir zaman (i/2+1) değeri ile “i”yi bölemez.
-   // Bu yüzden bu değerin (i/2+1) üstünü kontrol etmeye gerek yoktur
-   while (x != i / 2 + 1){  // “x”in “i”nin bir böleni olup olmadığının kontrol edilmesi
+   // “x” ile (kök(i)+1) eşit olmadığı sürece:
+   // “x” değeri hiçbir zaman (kök(i)+1) değeri ile “i”yi bölemez.
+   // Bu yüzden bu değerin (kök(i)+1) üstünü kontrol etmeye gerek yoktur
+   while (x != (int)(Math.sqrt(i)) + 1){  // “x”in “i”nin bir böleni olup olmadığının kontrol edilmesi
     if (i % x == 0) {
      j = 1;
      break; // En az bir bölen bulunursa sayının asal olmadığını öğrenmek için yeterlidir 
@@ -139,10 +139,10 @@ namespace Asal{
                 // “x” ile “j”ye başlangıç değerinin atanması   
                 x = 2; 
                 j = 0;
-                // “x” ile “i/2+1” eşit olmadığı sürece:
-                // “x” değeri hiçbir zaman (i/2+1) değeri ile “i”yi bölemez.
-                // Bu yüzden bu değerin (i/2+1) üstünü kontrol etmeye gerek yoktur
-                while (x != i){
+                // “x” ile (kök(i)+1) eşit olmadığı sürece:
+                // “x” değeri hiçbir zaman (kök(i)+1) değeri ile “i”yi bölemez.
+                // Bu yüzden bu değerin (kök(i)+1) üstünü kontrol etmeye gerek yoktur
+                while (x != (int)(Math.Sqrt(i)) + 1){
                     if (i % x == 0){
                         j = 1;
                         break; // En az bir bölen bulunursa sayının asal olmadığını öğrenmek için yeterlidir 

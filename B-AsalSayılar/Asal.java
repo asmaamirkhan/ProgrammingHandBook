@@ -1,3 +1,4 @@
+import java.lang.Math; 
 public class Asal {
  public static void main(String arg[]) {
   
@@ -12,10 +13,10 @@ public class Asal {
    x = 2;
    j = 0; 
    
-   // “x” ile “i/2+1” eşit olmadığı sürece:
-   // “x” değeri hiçbir zaman (i/2+1) değeri ile “i”yi bölemez.
-   // Bu yüzden bu değerin (i/2+1) üstünü kontrol etmeye gerek yoktur
-   while (x != i / 2 + 1)
+   // “x” ile (kök(i)+1) eşit olmadığı sürece:
+   // “x” değeri hiçbir zaman (kök(i)+1) değeri ile “i”yi bölemez.
+   // Bu yüzden bu değerin (kök(i)+1) üstünü kontrol etmeye gerek yoktur
+   while (x != (int)(Math.sqrt(i)) + 1)
    {
     // “x”in “i”nin bir böleni olup olmadığının kontrol edilmesi   
     if (i % x == 0) 
