@@ -23,7 +23,7 @@
 1. `i`, `x`, “j”nin tanımlanması.
 2. 11’den 99’a kadar döngünün oluşturulması.
    - `x` ile `j`ye başlangıç değerinin atanması
-   - `x` ile `i/2+1` eşit olmadığı sürece:
+   - `x` ile `kök(i) +1` eşit olmadığı sürece:
      - `x`in `i`nin bir böleni olup olmadığının kontrol edilmesi.
    - Asal sayıların ekrana yazdırılması.
 
@@ -183,4 +183,4 @@ namespace Asal{
 
 ## 💡 Notlar 
 1. En az bir bölen bulunursa sayının asal olmadığını öğrenmek için yeterlidir. O yüzden sonraki değerleri kontrol etmeden döngüden çıkılır.
-2. `x` değeri hiçbir zaman `(i/2+1)` değeri ile `i`yi bölemez. Bu yüzden bu değerin `(i/2+1)` üstünü kontrol etmeye gerek yoktur. Örnek: `i= 10` için `10/2+1` değeri hiçbir zaman 10’u tam bölemez. Diğer sayıları da buna kıyas edebiliriz.
+2. `x` değeri hiçbir zaman `(kök(i)+1)` değeri ile `i`yi bölemez. Bu yüzden bu değerin `(kök(i)+1)` üstünü kontrol etmeye gerek yoktur. Örnek: `i= 10` için `kök(10)+1` değeri hiçbir zaman 10’u tam bölemez. Diğer sayıları da buna kıyas edebiliriz.
