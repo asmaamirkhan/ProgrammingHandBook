@@ -12,12 +12,12 @@ Bu kitapçık, programlamaya yeni başlayanları hedeflemektedir. Kitapçıktaki
 ## 📑 İçerikler
 Her soru klasöründe aşağıdaki dosyalar bulunmaktadır:
 
-1. Anlatım dosyası (`README.md` dosyası)
-1. Python kod dosyası (`.py` uzantılı)
-1. C++ kod dosyası (`.cpp` uzantılı)
-1. Java kod dosyası (`.java` uzantılı)
-1. C# kod dosyası (`.cs` uzantılı)
-1. Çözüm şema dosyası (`.png` uzantılı)
+1. 👩‍🏫 Anlatım dosyası (`README.md` dosyası)
+1. 🐍 Python kod dosyası (`.py` uzantılı)
+1. ⚙ C++ kod dosyası (`.cpp` uzantılı)
+1. ☕ Java kod dosyası (`.java` uzantılı)
+1. ⏹ C# kod dosyası (`.cs` uzantılı)
+1. 🧩 Çözüm şema dosyası (`.png` uzantılı)
 
 > Kitapçığın PDF'ine [buradan](./res/Programlama-IKitapçığıV.1.pdf) erişebilirsin ✨🚩, (V1 versiyonu)
 
