@@ -6,7 +6,7 @@ description: Programlama temellerine dayanarak hazırlanmıştır.
 
 ## 🎤 Ön Söz
 - 💻 Bu kitapçık, programlamaya yeni başlayanları hedeflemektedir. Kitapçıktaki sorular programlamanın temellerini kapsamaktadır. 
-- 👩‍🏫 Kitapçığın amacı algoritma kurma becerisini geliştirmek olduğundan dolayı direkt kodları vermek yerine ⛓ _Program Kısımları_, 👓 _Çözüm Yöntemi_ ve 👩‍🔧 _Çözüm Adımları_ kısımlarını da sunmaktadır. 
+- 👩‍🏫 Kitapçığın amacı algoritma kurma becerisini geliştirmek olduğundan dolayı direkt kodları vermek yerine ⛓ **_Program Kısımları_**, 👓 **_Çözüm Yöntemi_** ve 👩‍🔧 **_Çözüm Adımları_** kısımlarını da sunmaktadır. 
 - 👷‍♀️ Kitapçıktaki sorular **kolaydan zora** doğru sıralanmıştır ve her programın akış diyagramı ve farklı programlama dillerinde yazılmış kodları bulunmaktadır.
 
 > Sıralama yöntemini merak ediyorsan [Kitapçığın Planına](./Plan.md) göz atabilirsin 👀 
