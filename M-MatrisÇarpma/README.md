@@ -232,4 +232,4 @@ A*B=
 
 ## 💡 Notlar 
 1. `C`nin satır sayısı `A`nın satır sayısına eşittir ve sütun sayısı `B`nin sütun sayısına eşittir.
-Örneğin: A<sub>mn</sub> * B<sub>fp</sub> = C<sub>mp</sub>
+Örneğin: $$A_{mn} * B_{fp} = C_{mp}$$
