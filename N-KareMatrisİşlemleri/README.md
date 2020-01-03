@@ -26,7 +26,7 @@ Aşağıdaki fonksiyonları yazıp main içerisinde seçenek listesi olarak ça�
 <img src="../res/MatrisOrnegi.png" height="75"  />
 
 - Herhangi bir satırın eleman indeksinde `i` sabitken `j` değişir.
-- Asal köşegenin her a<sub>ij</sub> elemanı, `(i=j)` özelliğine sahiptir.
+- Asal köşegenin her $$a_{ij}$$ elemanı, `(i=j)` özelliğine sahiptir.
   - Kod örneği: `for(i=0; i<n; i++) { A[i][i] …}`
 - Ters köşegenin her aij elemanı, `(j=n-1-i)` özelliğine sahiptir.
   - Kod örneği: `for(i=0; i<n; i++) { A[i][n-1-i] …}`
