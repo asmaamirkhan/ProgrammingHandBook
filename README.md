@@ -34,7 +34,7 @@ Bu kitapçık Programlama-I dersi kapsamında hazırlanıp bazı kısımları 20
 
 ## 🙌 Hazırlayanlar
 - Asmaa Mirkhan ~ [Linkedin 🔗](https://www.linkedin.com/in/asmaamirkhan/) - [GitHub 🔗](https://github.com/asmaamirkhan)
-- Mohammad AlBadwieh ~ [Linkedin 🔗](https://www.linkedin.com/in/mhdb96/) - [GitHub 🔗](https://github.com/mhdb96)
+- Muhammed AKSOY ~ [Linkedin 🔗](https://www.linkedin.com/in/mhdb96/) - [GitHub 🔗](https://github.com/mhdb96)
 
 ## 🤝 Katkıda Bulunanlar
 
